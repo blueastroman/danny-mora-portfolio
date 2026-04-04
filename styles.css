@@ -725,27 +725,23 @@ img {
 
 .dirk-page .dirk-title {
   font-family: var(--font-display);
-  font-size: clamp(4.5rem, 10vw, 7.4rem);
+  font-size: clamp(3.8rem, 8.5vw, 6.4rem);
   letter-spacing: -0.05em;
-  line-height: 0.88;
+  line-height: 0.9;
 }
 
 .dirk-page .dirk-subtitle {
-  max-width: 34ch;
+  max-width: 30ch;
   margin-left: auto;
   margin-right: auto;
   font-family: var(--font-display);
-  font-size: clamp(1.2rem, 2.35vw, 1.7rem);
-  line-height: 1.28;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: 1.32;
   text-align: center;
 }
 
-.dirk-page .media-badge {
-  background: transparent;
-}
-
 .dirk-hero {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   text-align: center;
 }
 
@@ -763,7 +759,7 @@ img {
 
 .dirk-subtitle {
   max-width: 36ch;
-  margin: 1.25rem 0 0;
+  margin: 0.9rem 0 0;
   font-size: clamp(1.1rem, 2.2vw, 1.45rem);
   line-height: 1.45;
   color: rgba(23, 21, 18, 0.88);
@@ -771,29 +767,29 @@ img {
 
 .dirk-copy {
   display: grid;
-  gap: 2rem;
-  max-width: 72rem;
-  margin: 3rem auto 0;
+  gap: 1.2rem;
+  max-width: 42rem;
+  margin: 1.8rem auto 0;
   justify-items: center;
   text-align: center;
 }
 
 .dirk-lead {
   margin: 0;
-  max-width: 35ch;
+  max-width: 31ch;
   font-family: var(--font-display);
-  font-size: clamp(1.6rem, 3.1vw, 2.4rem);
-  line-height: 1.35;
+  font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+  line-height: 1.28;
   letter-spacing: -0.02em;
 }
 
 .dirk-media-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-  gap: 2rem;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  gap: 1.15rem;
   align-items: end;
-  margin: 3rem auto 0;
-  max-width: 64rem;
+  margin: 1.5rem auto 0;
+  max-width: 72rem;
 }
 
 .dirk-media {
@@ -801,46 +797,29 @@ img {
 }
 
 .dirk-media-tall {
-  padding-right: 2%;
+  padding-right: 0;
 }
 
 .dirk-media-wide {
-  padding-left: 3%;
-  padding-bottom: 7%;
-}
-
-.media-shell {
-  display: grid;
-  gap: 0.75rem;
-}
-
-.media-badge {
-  display: inline-flex;
-  width: fit-content;
-  padding: 0.38rem 0.7rem;
-  border: 1px solid rgba(22, 22, 22, 0.14);
-  background: rgba(255, 255, 255, 0.76);
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  padding-left: 0;
+  padding-bottom: 4.2rem;
 }
 
 .media-frame {
   position: relative;
   overflow: hidden;
-  border-radius: 2rem;
-  border: 2px solid rgba(22, 22, 22, 0.1);
-  box-shadow: var(--shadow);
-  background: rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  border: 1px solid rgba(22, 22, 22, 0.1);
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.28);
 }
 
 .media-frame-portrait {
-  min-height: 38rem;
+  min-height: 36rem;
 }
 
 .media-frame-bed {
-  min-height: 22rem;
+  min-height: 19rem;
 }
 
 .media-photo {
@@ -855,16 +834,16 @@ img {
 }
 
 .dirk-video-block {
-  max-width: 64rem;
-  margin: 2rem auto 0;
+  max-width: 72rem;
+  margin: 2.4rem auto 0;
 }
 
 .dirk-video-frame {
   overflow: hidden;
-  border-radius: 2rem;
+  border-radius: 0;
   border: 1px solid rgba(24, 21, 18, 0.14);
-  box-shadow: var(--shadow);
-  background: rgba(255, 255, 255, 0.35);
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .dirk-video {
@@ -1030,10 +1009,10 @@ img {
   }
 
   .media-frame-portrait {
-    min-height: 28rem;
+    min-height: 26rem;
   }
 
   .media-frame-bed {
-    min-height: 18rem;
+    min-height: 16rem;
   }
 }
