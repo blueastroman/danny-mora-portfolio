@@ -681,6 +681,14 @@ img {
   line-height: 0.92;
 }
 
+.dirk-subtitle {
+  max-width: 36ch;
+  margin: 1.25rem 0 0;
+  font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+  line-height: 1.45;
+  color: rgba(23, 21, 18, 0.88);
+}
+
 .dirk-copy {
   display: grid;
   gap: 2rem;
