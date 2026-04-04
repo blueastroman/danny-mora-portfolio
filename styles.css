@@ -725,29 +725,30 @@ img {
 
 .dirk-page .dirk-title {
   font-family: var(--font-display);
-  font-size: clamp(3.8rem, 8.5vw, 6.4rem);
+  font-size: clamp(2.8rem, 5.4vw, 4.9rem);
   letter-spacing: -0.05em;
   line-height: 0.9;
+  white-space: nowrap;
 }
 
 .dirk-page .dirk-subtitle {
-  max-width: 30ch;
+  max-width: 40ch;
   margin-left: auto;
   margin-right: auto;
   font-family: var(--font-display);
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
-  line-height: 1.32;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.24;
   text-align: center;
 }
 
 .dirk-hero {
-  padding-top: 0.6rem;
+  padding-top: 0.1rem;
   text-align: center;
 }
 
 .dirk-title {
   margin: 0;
-  max-width: 8ch;
+  max-width: none;
   margin-left: auto;
   margin-right: auto;
   font-family: var(--font-sans);
@@ -758,51 +759,29 @@ img {
 }
 
 .dirk-subtitle {
-  max-width: 36ch;
+  max-width: 40ch;
   margin: 0.9rem 0 0;
   font-size: clamp(1.1rem, 2.2vw, 1.45rem);
-  line-height: 1.45;
+  line-height: 1.24;
   color: rgba(23, 21, 18, 0.88);
 }
 
 .dirk-copy {
   display: grid;
-  gap: 1.2rem;
-  max-width: 42rem;
-  margin: 1.15rem auto 0;
+  gap: 0.9rem;
+  max-width: 56rem;
+  margin: 1rem auto 0;
   justify-items: center;
   text-align: center;
 }
 
 .dirk-lead {
   margin: 0;
-  max-width: 31ch;
+  max-width: 42ch;
   font-family: var(--font-display);
-  font-size: clamp(1.35rem, 2.2vw, 1.9rem);
-  line-height: 1.28;
+  font-size: clamp(1.1rem, 1.55vw, 1.35rem);
+  line-height: 1.42;
   letter-spacing: -0.02em;
-}
-
-.dirk-media-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
-  gap: 1.15rem;
-  align-items: end;
-  margin: 0.35rem auto 0;
-  max-width: 72rem;
-}
-
-.dirk-media {
-  min-width: 0;
-}
-
-.dirk-media-tall {
-  padding-right: 0;
-}
-
-.dirk-media-wide {
-  padding-left: 0;
-  padding-bottom: 4.2rem;
 }
 
 .media-frame {
@@ -815,11 +794,15 @@ img {
 }
 
 .media-frame-portrait {
-  min-height: 36rem;
+  aspect-ratio: 4 / 5;
 }
 
 .media-frame-bed {
-  min-height: 19rem;
+  aspect-ratio: 16 / 10;
+}
+
+.media-frame-portrait-side {
+  aspect-ratio: 4 / 5;
 }
 
 .media-photo {
@@ -834,8 +817,8 @@ img {
 }
 
 .dirk-video-block {
-  max-width: 72rem;
-  margin: 1.7rem auto 0;
+  max-width: 70rem;
+  margin: 1.25rem auto 0;
 }
 
 .dirk-video-frame {
@@ -857,8 +840,24 @@ img {
   align-items: start;
 }
 
+.dirk-storyband {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.dirk-story-copy > p {
+  max-width: 40rem;
+}
+
+.dirk-side-image {
+  min-width: 0;
+}
+
 .dirk-facts {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1.4rem;
 }
 
 .contact-layout,
@@ -907,7 +906,7 @@ img {
   .about-layout,
   .case-study,
   .cta-band,
-  .dirk-media-grid {
+  .dirk-storyband {
     grid-template-columns: 1fr;
   }
 
@@ -999,20 +998,15 @@ img {
   }
 
   .dirk-lead {
-    max-width: none;
+    max-width: 36ch;
     font-size: clamp(1.35rem, 5vw, 1.9rem);
   }
 
-  .dirk-media-tall,
-  .dirk-media-wide {
-    padding: 0;
+  .dirk-page .dirk-title {
+    white-space: normal;
   }
 
-  .media-frame-portrait {
-    min-height: 26rem;
-  }
-
-  .media-frame-bed {
-    min-height: 16rem;
+  .dirk-side-image {
+    max-width: 28rem;
   }
 }
