@@ -17,7 +17,7 @@
   --font-display: "Georgia", "Times New Roman", serif;
   --font-sans: "Helvetica Neue", "Avenir Next", Helvetica, Arial, sans-serif;
   --font-mono: "SF Mono", "Menlo", "Consolas", monospace;
-  --paper-texture: none;
+  --paper-texture: url("assets/textures/paper-texture.jpg");
 }
 
 *,
@@ -38,6 +38,10 @@ body {
     var(--paper-texture),
     radial-gradient(circle at top left, rgba(155, 58, 43, 0.06), transparent 22%),
     linear-gradient(180deg, #faf5eb 0%, var(--paper) 55%, #efe5d5 100%);
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-size: 720px auto, auto, auto;
+  background-position: top left, top left, top left;
+  background-blend-mode: multiply, normal, normal;
   min-height: 100vh;
   line-height: 1.6;
 }
