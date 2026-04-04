@@ -35,13 +35,14 @@ body {
   font-family: var(--font-sans);
   color: var(--ink);
   background:
+    linear-gradient(rgba(243, 236, 222, 0.58), rgba(243, 236, 222, 0.58)),
     var(--paper-texture),
     radial-gradient(circle at top left, rgba(155, 58, 43, 0.06), transparent 22%),
     linear-gradient(180deg, #faf5eb 0%, var(--paper) 55%, #efe5d5 100%);
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: cover, auto, auto;
-  background-position: center top, top left, top left;
-  background-blend-mode: multiply, normal, normal;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: auto, cover, auto, auto;
+  background-position: top left, center top, top left, top left;
+  background-blend-mode: normal, multiply, normal, normal;
   min-height: 100vh;
   line-height: 1.6;
 }
