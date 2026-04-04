@@ -17,6 +17,7 @@
   --font-display: "Georgia", "Times New Roman", serif;
   --font-sans: "Helvetica Neue", "Avenir Next", Helvetica, Arial, sans-serif;
   --font-mono: "SF Mono", "Menlo", "Consolas", monospace;
+  --paper-texture: none;
 }
 
 *,
@@ -34,6 +35,7 @@ body {
   font-family: var(--font-sans);
   color: var(--ink);
   background:
+    var(--paper-texture),
     radial-gradient(circle at top left, rgba(155, 58, 43, 0.06), transparent 22%),
     linear-gradient(180deg, #faf5eb 0%, var(--paper) 55%, #efe5d5 100%);
   min-height: 100vh;
@@ -730,9 +732,12 @@ img {
 
 .dirk-page .dirk-subtitle {
   max-width: 34ch;
+  margin-left: auto;
+  margin-right: auto;
   font-family: var(--font-display);
   font-size: clamp(1.2rem, 2.35vw, 1.7rem);
   line-height: 1.28;
+  text-align: center;
 }
 
 .dirk-page .media-badge {
@@ -741,11 +746,14 @@ img {
 
 .dirk-hero {
   padding-top: 2rem;
+  text-align: center;
 }
 
 .dirk-title {
   margin: 0;
   max-width: 8ch;
+  margin-left: auto;
+  margin-right: auto;
   font-family: var(--font-sans);
   font-size: clamp(3.5rem, 10vw, 7rem);
   font-weight: 800;
@@ -765,7 +773,9 @@ img {
   display: grid;
   gap: 2rem;
   max-width: 72rem;
-  margin-top: 2rem;
+  margin: 3rem auto 0;
+  justify-items: center;
+  text-align: center;
 }
 
 .dirk-lead {
@@ -782,7 +792,8 @@ img {
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
   gap: 2rem;
   align-items: end;
-  margin-top: 3rem;
+  margin: 3rem auto 0;
+  max-width: 64rem;
 }
 
 .dirk-media {
@@ -790,12 +801,12 @@ img {
 }
 
 .dirk-media-tall {
-  padding-right: 4%;
+  padding-right: 2%;
 }
 
 .dirk-media-wide {
-  padding-left: 6%;
-  padding-bottom: 8%;
+  padding-left: 3%;
+  padding-bottom: 7%;
 }
 
 .media-shell {
@@ -841,6 +852,26 @@ img {
 
 .media-photo-portrait {
   object-position: 37% center;
+}
+
+.dirk-video-block {
+  max-width: 64rem;
+  margin: 2rem auto 0;
+}
+
+.dirk-video-frame {
+  overflow: hidden;
+  border-radius: 2rem;
+  border: 1px solid rgba(24, 21, 18, 0.14);
+  box-shadow: var(--shadow);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.dirk-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
 }
 
 .dirk-story-layout {
