@@ -690,7 +690,7 @@ img {
 }
 
 .home-page .hero-title {
-  font-size: clamp(4rem, 9.8vw, 7.6rem);
+  font-size: clamp(3.1rem, 7.2vw, 5.6rem);
   max-width: 8.5ch;
 }
 
