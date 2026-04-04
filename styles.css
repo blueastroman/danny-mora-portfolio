@@ -238,8 +238,8 @@ img {
 }
 
 .hero-title {
-  font-size: clamp(3rem, 8vw, 6.3rem);
-  max-width: 10ch;
+  font-size: clamp(2.4rem, 5.6vw, 4.4rem);
+  max-width: 12ch;
 }
 
 .hero-lead {
