@@ -17,7 +17,7 @@
   --font-display: "Georgia", "Times New Roman", serif;
   --font-sans: "Helvetica Neue", "Avenir Next", Helvetica, Arial, sans-serif;
   --font-mono: "SF Mono", "Menlo", "Consolas", monospace;
-  --paper-texture: url("assets/textures/paper-texture.jpg");
+  --paper-texture: url("assets/textures/paper-texture-vertical.jpg");
 }
 
 *,
