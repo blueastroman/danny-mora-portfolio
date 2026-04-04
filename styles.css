@@ -786,7 +786,7 @@ img {
 .media-frame {
   position: relative;
   overflow: hidden;
-  border-radius: 0;
+  border-radius: 22px;
   border: 1px solid rgba(22, 22, 22, 0.1);
   box-shadow: none;
   background: rgba(255, 255, 255, 0.28);
@@ -822,7 +822,7 @@ img {
 
 .dirk-video-frame {
   overflow: hidden;
-  border-radius: 0;
+  border-radius: 22px;
   border: 1px solid rgba(24, 21, 18, 0.14);
   box-shadow: none;
   background: rgba(255, 255, 255, 0.2);
