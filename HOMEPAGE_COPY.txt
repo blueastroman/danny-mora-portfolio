@@ -1,0 +1,148 @@
+HOMEPAGE COPY
+
+TITLE
+Daniel Mora | Storyteller and Brand Marketer
+
+META DESCRIPTION
+Daniel Mora is a marketer and filmmaker working across brand strategy, creator programs, and story-led campaigns.
+
+HEADER
+Brand name:
+Daniel Mora
+
+Brand subtitle:
+Brand, creator, and story-led marketing
+
+Navigation:
+Home
+Work
+About
+Contact
+
+HERO
+Eyebrow:
+Daniel Mora / marketing / creator partnerships / film
+
+Headline:
+Integrated campaigns, creator partnerships, and story-led work.
+
+Body:
+Marketing Manager at Lufthansa in New York, leading influencer and partnership marketing across entertainment, sports, and travel, with a parallel practice in film and visual effects.
+
+Buttons:
+View selected work
+About me
+
+HERO SIDE PANEL
+Panel title:
+A short version of me.
+
+Row 1 label:
+Current role
+
+Row 1 body:
+Leading creator and partnership marketing at Lufthansa since 2022.
+
+Row 2 label:
+Top Highlight
+
+Row 2 body:
+Developed a global creator strategy with 10x+ ROI across entertainment, sports, and travel.
+
+Row 3 label:
+Parallel Work
+
+Row 3 body:
+Visual effects and film work shaping how I think about storytelling, visual imagery, and style.
+
+SELECTED IMPACT
+Section kicker:
+Key Highlights
+
+Section headline:
+2025 Overview of influencer
+
+Section intro:
+2025 snaps creator and paid media work across Lufthansa Group, including Lufthansa, SWISS, and Austrian Airlines.
+
+Stat 1 label:
+Creators
+
+Stat 1 number:
+35
+
+Stat 1 caption:
+A creator ecosystem built across multiple brand moments.
+
+Stat 2 label:
+Assets
+
+Stat 2 number:
+300+
+
+Stat 2 caption:
+Creative output across the broader creator program.
+
+Stat 3 label:
+Organic Views
+
+Stat 3 number:
+8M+
+
+Stat 3 caption:
+Creator-led organic performance across the ecosystem.
+
+Stat 4 label:
+Paid Impressions
+
+Stat 4 number:
+30M+
+
+Stat 4 caption:
+Scaled paid distribution supporting the program.
+
+FEATURED WORK
+Section kicker:
+Featured work
+
+Section headline:
+Selected Highlights of my work.
+
+Card 1 title:
+Dirk Nowitzki Partnership
+
+Card 1 body:
+A global ambassador partnership for Lufthansa Allegris, built around a simple campaign idea: a seat fit for a 7-foot MVP.
+
+Card 2 title:
+Influencers
+
+Card 2 body:
+Creator and partnership work across Lufthansa, SWISS, and Austrian Airlines.
+
+Card 3 title:
+Storytelling
+
+Card 3 body:
+Brand films, documentaries, short films, and post-production work that sharpened my eye for pacing, clarity, and what makes a story tick.
+
+CONTACT CTA
+Section kicker:
+Get in touch
+
+Section headline:
+Always glad to connect with creative people.
+
+Section body:
+If you want to talk brand work, creator partnerships, filmmaking, or technology, feel free to reach out.
+
+Buttons:
+Contact
+More about me
+
+FOOTER
+Line 1:
+Daniel Mora
+
+Line 2:
+Storyteller and Brand Marketer
