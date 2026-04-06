@@ -6,9 +6,9 @@
   --ink: #181512;
   --muted: #645c52;
   --line: rgba(24, 21, 18, 0.18);
-  --accent: #9b3a2b;
-  --accent-soft: #d8be9d;
-  --accent-cool: #3a5464;
+  --accent: #2f6b6a;
+  --accent-soft: #a8c3bc;
+  --accent-cool: #2f6b6a;
   --success: #405c4a;
   --shadow: 6px 6px 0 rgba(24, 21, 18, 0.04);
   --radius: 3px;
@@ -37,7 +37,7 @@ body {
   background:
     linear-gradient(rgba(243, 236, 222, 0.58), rgba(243, 236, 222, 0.58)),
     var(--paper-texture),
-    radial-gradient(circle at top left, rgba(155, 58, 43, 0.06), transparent 22%),
+    radial-gradient(circle at top left, rgba(47, 107, 106, 0.08), transparent 22%),
     linear-gradient(180deg, #faf5eb 0%, var(--paper) 55%, #efe5d5 100%);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: auto, cover, auto, auto;
