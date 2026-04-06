@@ -17,7 +17,6 @@ Navigation:
 Home
 Work
 About
-Notes
 Contact
 
 PAGE HERO
