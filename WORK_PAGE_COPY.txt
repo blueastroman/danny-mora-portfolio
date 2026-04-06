@@ -6,154 +6,48 @@ Work | Daniel Mora
 META DESCRIPTION
 Selected work by Daniel Mora across creator strategy, brand marketing, and narrative production.
 
-HEADER
-Brand name:
-Daniel Mora
-
-Brand subtitle:
-Brand, creator, and story-led marketing
-
-Navigation:
-Home
-Work
-About
-Contact
-
 PAGE HERO
-Eyebrow:
-Selected work
-
-Headline:
-Brand work, creator partnerships, and a film brain in the mix.
-
-Intro:
-I’ve worked across global airline marketing, branded storytelling, and original film projects. The common thread is simple: figure out what the idea is, who it’s for, and how to make it actually land.
-
-Side note:
-I’m most useful in the middle of strategy and execution: creator selection, campaign structure, creative development, production, and the performance story after launch.
+Eyebrow: Selected work
+Headline: Brand work, creator partnerships, and a filmmaker's eye.
+Intro: I've worked across global airline marketing, branded storytelling, and original film projects. The throughline is always the same: a clear idea, the right person to carry it, and work that actually lands.
+Side note: I'm most useful in the middle of strategy and execution: creator selection, campaign structure, creative development, production, and the performance story after launch.
 
 CASE STUDY 1
-Section kicker:
-Global creator marketing
-
-Title:
-Lufthansa Group
-
-Summary:
-Across Lufthansa, SWISS, and Austrian Airlines, I worked on creator and partnership campaigns built to make premium travel feel current, social, and worth talking about.
-
-Paragraph 1:
-The work ranged from Pride and Fashion Week to destination storytelling, product launches, and year-round brand visibility. It required strong creator fit, good briefs, platform instincts, and constant judgment about what still felt right for the brand.
-
-Paragraph 2:
-This is the kind of work I like most because it combines systems and taste. The process matters, the relationships matter, and the creative still has to hold up.
-
+Kicker: Global creator marketing
+Title: Lufthansa Group
+Summary: Across Lufthansa, SWISS, and Austrian Airlines, I worked on creator and partnership campaigns built to make premium travel feel current, social, and worth talking about.
+Paragraph 1: The work ranged from Pride and Fashion Week to destination storytelling, product launches, and year-round brand visibility. It required strong creator fit, sharp briefs, platform instincts, and constant judgment about what still felt right for the brand.
+Paragraph 2: This is the kind of work I like most because it combines systems and taste. The process matters, the relationships matter, and the creative still has to hold up.
 Bullets:
 Topline: A 35-creator ecosystem producing 300+ assets, 8M+ organic views, and 30M+ paid impressions.
 Program shape: Creator partnerships spanning product launches, destination storytelling, and cultural moments across multiple brands.
 Platforms: Instagram, TikTok, and YouTube.
 High-performing moments: Pride, Fashion Week, destination storytelling, ski races, jazz festival, and premium cabin launches.
-
-Meta card 1 title:
-Scope
-
-Meta card 1 items:
-Creator strategy
-Brand partnerships
-Campaign planning
-Performance storytelling
-
-Meta card 2 title:
-Signals
-
-Meta card 2 items:
-35 creators
-300+ assets
-8M+ organic views
-30M+ paid impressions
-3 platforms activated
+Meta card 1: Scope / Creator strategy, Brand partnerships, Campaign planning, Performance storytelling
+Meta card 2: Signals / 35 creators, 300+ assets, 8M+ organic views, 30M+ paid impressions, 3 platforms activated
 
 CASE STUDY 2
-Section kicker:
-Purpose-led branded storytelling
-
-Title:
-Brand New World Studios
-
-Summary:
-Before creator strategy became a bigger part of my work, I spent years learning how to tell brand stories without sanding off the humanity.
-
-Paragraph 1:
-At Brand New World Studios in Atlanta, I produced films about Oprah Winfrey, Little Miss Flint, Hershey, and the Salvation Army. The work needed more than polished visuals. It needed a point of view.
-
-Paragraph 2:
-That experience still shapes how I think as a marketer. A campaign can be organized, strategic, and well-targeted, but if it feels lifeless, people know.
-
+Kicker: Purpose-led branded storytelling
+Title: Brand New World Studios
+Summary: Before creator strategy became a bigger part of my work, I spent years learning how to tell brand stories without sanding off the humanity.
+Paragraph 1: At Brand New World Studios in Atlanta, I produced films about Oprah Winfrey, Little Miss Flint, Hershey, and the Salvation Army. Polished visuals weren't enough. The work needed a point of view.
+Paragraph 2: That experience still shapes how I think as a marketer. A campaign can be organized, strategic, and well-targeted, but if it feels lifeless, people know.
 Bullets:
 Projects: Purpose-led branded films and documentaries across social, editorial, and longer-form formats.
 Contribution: Creative development, production, narrative framing, and message discipline.
 Takeaway: Story craft is a brand skill, not just a film skill.
-
-Meta card 1 title:
-Selected stories
-
-Meta card 1 items:
-Oprah Winfrey purpose film
-Little Miss Flint purpose film
-Hershey purpose film
-Salvation Army purpose film
-
-Meta card 2 title:
-What it sharpened
-
-Meta card 2 items:
-Editorial judgment
-Message clarity
-Production fluency
-Emotional storytelling
+Meta card 1: Selected stories / Oprah Winfrey purpose film, Little Miss Flint purpose film, Hershey purpose film, Salvation Army purpose film
+Meta card 2: What it sharpened / Editorial judgment, Message clarity, Production fluency, Emotional storytelling
 
 CASE STUDY 3
-Section kicker:
-Original work & post-production
-
-Title:
-Independent film, documentary, and VFX
-
-Summary:
-My film background is where a lot of my taste, timing, and creative judgment came from.
-
-Paragraph 1:
-I’ve written, directed, and produced original short films including The Happiness Machine and A Trip to Remember, co-wrote and co-directed the documentary A New Coke, and worked in VFX supervision and editing on projects including Baba I’m Fine, an SXSW Official Selection in 2025.
-
-Paragraph 2:
-Those projects taught me how to solve creative problems quickly, keep people aligned around a story, and work through constraints without panicking.
-
+Kicker: Original work and post-production
+Title: Independent film, documentary, and VFX
+Summary: Most of my creative instincts were built here. The marketing brain came later.
+Paragraph 1: I've written, directed, and produced original short films including The Happiness Machine and A Trip to Remember, co-wrote and co-directed the documentary A New Coke, and worked in VFX supervision and editing on Baba I'm Fine, an SXSW Official Selection in 2025.
+Paragraph 2: Those projects taught me how to solve creative problems quickly, keep people aligned around a story, and work through constraints without panicking.
 Bullets:
 Original films: Writing, directing, producing, editing, and remote collaboration.
 VFX: Supervision, editorial precision, and post-production problem solving.
 Awards: Kiki McCabe and Agnes Nixon Screenwriting Award at Emory University.
-
-Meta card 1 title:
-Selected credits
-
-Meta card 1 items:
-The Happiness Machine
-A Trip to Remember
-A New Coke
-Baba I’m Fine
-
-Meta card 2 title:
-What it taught me
-
-Meta card 2 items:
-Creative leadership
-Resourcefulness
-Taste under pressure
-Audience empathy
-
-FOOTER
-Line 1:
-Daniel Mora
-
-Line 2:
-Selected work in brand, creator, and story-led marketing
+Meta card 1: Selected credits / The Happiness Machine, A Trip to Remember, A New Coke, Baba I'm Fine
+Meta card 2: What it taught me / Creative leadership, Resourcefulness, Taste under pressure, Audience empathy
