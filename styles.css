@@ -552,6 +552,21 @@ img {
   margin-top: 1rem;
 }
 
+.story-link-row {
+  margin-top: 1.25rem;
+}
+
+.story-text-link {
+  color: var(--accent);
+  border-bottom: 1px solid rgba(47, 107, 106, 0.42);
+  font-weight: 700;
+}
+
+.story-text-link:hover,
+.story-text-link:focus-visible {
+  border-color: var(--accent);
+}
+
 .story-note {
   display: inline-block;
   margin-top: 1.2rem;
