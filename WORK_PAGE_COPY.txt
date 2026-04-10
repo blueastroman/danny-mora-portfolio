@@ -1,53 +1,40 @@
-WORK PAGE COPY
+WORK PAGE
 
-TITLE
-Work | Daniel Mora
-
-META DESCRIPTION
-Selected work by Daniel Mora across creator strategy, brand marketing, and narrative production.
-
-PAGE HERO
-Eyebrow: Selected work
-Headline: Brand work, creator partnerships, and a filmmaker's eye.
-Intro: I've worked across global airline marketing, branded storytelling, and original film projects. The throughline is always the same: a clear idea, the right person to carry it, and work that actually lands.
-Side note: I'm most useful in the middle of strategy and execution: creator selection, campaign structure, creative development, production, and the performance story after launch.
+Headline: Stories built to perform.
+Subhead: Brand storytelling across creator programs, global partnerships, and multi-channel campaigns.
 
 CASE STUDY 1
-Kicker: Global creator marketing
-Title: Lufthansa Group
-Summary: Across Lufthansa, SWISS, and Austrian Airlines, I worked on creator and partnership campaigns built to make premium travel feel current, social, and worth talking about.
-Paragraph 1: The work ranged from Pride and Fashion Week to destination storytelling, product launches, and year-round brand visibility. It required strong creator fit, sharp briefs, platform instincts, and constant judgment about what still felt right for the brand.
-Paragraph 2: This is the kind of work I like most because it combines systems and taste. The process matters, the relationships matter, and the creative still has to hold up.
-Bullets:
-Topline: A 35-creator ecosystem producing 300+ assets, 8M+ organic views, and 30M+ paid impressions.
-Program shape: Creator partnerships spanning product launches, destination storytelling, and cultural moments across multiple brands.
-Platforms: Instagram, TikTok, and YouTube.
-High-performing moments: Pride, Fashion Week, destination storytelling, ski races, jazz festival, and premium cabin launches.
-Meta card 1: Scope / Creator strategy, Brand partnerships, Campaign planning, Performance storytelling
-Meta card 2: Signals / 35 creators, 300+ assets, 8M+ organic views, 30M+ paid impressions, 3 platforms activated
+Title: Lufthansa Allegris
+Label: Campaign
+The launch of Lufthansa's flagship first class product needed more than awareness. It needed to feel like the arrival of something worth wanting.
+We built a campaign around Dirk Nowitzki, placed it where it belonged, and let the creative do the work. CTV on Amazon Prime during NBA games. Out-of-home in expanding cities. One product, one truth, distributed with intention.
+Part of 850M+ impressions delivered across channels in 2025.
 
 CASE STUDY 2
-Kicker: Purpose-led branded storytelling
-Title: Brand New World Studios
-Summary: Before creator strategy became a bigger part of my work, I spent years learning how to tell brand stories without sanding off the humanity.
-Paragraph 1: At Brand New World Studios in Atlanta, I produced films about Oprah Winfrey, Little Miss Flint, Hershey, and the Salvation Army. Polished visuals weren't enough. The work needed a point of view.
-Paragraph 2: That experience still shapes how I think as a marketer. A campaign can be organized, strategic, and well-targeted, but if it feels lifeless, people know.
-Bullets:
-Projects: Purpose-led branded films and documentaries across social, editorial, and longer-form formats.
-Contribution: Creative development, production, narrative framing, and message discipline.
-Takeaway: Story craft is a brand skill, not just a film skill.
-Meta card 1: Selected stories / Oprah Winfrey purpose film, Little Miss Flint purpose film, Hershey purpose film, Salvation Army purpose film
-Meta card 2: What it sharpened / Editorial judgment, Message clarity, Production fluency, Emotional storytelling
+Title: Dirk Nowitzki Partnership
+Label: Ambassador
+A 7-foot MVP is not a brand fit for every airline. For Lufthansa Allegris, he was the only choice.
+We built a global ambassador partnership around a single idea: scale deserves scale. The campaign ran across OOH and CTV, anchored by creative that matched the product's ambition.
 
 CASE STUDY 3
-Kicker: Original work and post-production
-Title: Independent film, documentary, and VFX
-Summary: Most of my creative instincts were built here. The marketing brain came later.
-Paragraph 1: I've written, directed, and produced original short films including The Happiness Machine and A Trip to Remember, co-wrote and co-directed the documentary A New Coke, and worked in VFX supervision and editing on Baba I'm Fine, an SXSW Official Selection in 2025.
-Paragraph 2: Those projects taught me how to solve creative problems quickly, keep people aligned around a story, and work through constraints without panicking.
-Bullets:
-Original films: Writing, directing, producing, editing, and remote collaboration.
-VFX: Supervision, editorial precision, and post-production problem solving.
-Awards: Kiki McCabe and Agnes Nixon Screenwriting Award at Emory University.
-Meta card 1: Selected credits / The Happiness Machine, A Trip to Remember, A New Coke, Baba I'm Fine
-Meta card 2: What it taught me / Creative leadership, Resourcefulness, Taste under pressure, Audience empathy
+Title: New England Patriots
+Label: Partnership
+A three-year partnership built around a simple premise: bring American football to Berlin and bring Boston fans with it.
+We activated in Berlin, ran a sweepstakes that flew winners from Boston to an NFL game in Germany, and built a program that grows every year. Lufthansa as the bridge between two cultures that are still figuring each other out.
+
+CASE STUDY 4
+Title: Creator Program
+Label: Influencer
+Most influencer programs are built around reach. This one was built around fit.
+We identified exactly the kind of creator Lufthansa's audience trusts, found the best ones, and gave them full creative control. They know their audience better than any brief does. The results proved it.
+35 creators. 300+ assets. 8M+ organic views at a 24.7% view rate against a 17% benchmark. 5.27% engagement rate against a 4.01% benchmark.
+
+CASE STUDY 5
+Title: Film Background
+Label: Before Lufthansa
+
+Before aviation marketing, I was in production. VFX editor and supervisor on films that went to festivals. Baba I'm Fine, a short directed by Karina Dandashi, selected for SXSW 2025. Jungle Rhythms, directed by Adrian Kader, making the festival circuit. A TV pilot with director Rob Schmidt.
+
+At Brand New World Studios in Atlanta, that same instinct moved into branded work. Purpose-led documentaries about Oprah Winfrey, Little Miss Flint, Hershey's, and the Salvation Army. Films that started with why.
+
+I also won the Kiki McCabe and Agnes Nixon Screenwriting Award at Emory University for my screenplay Tightrope, presented by Pulitzer Prize-winning poet Dr. Jericho Brown.

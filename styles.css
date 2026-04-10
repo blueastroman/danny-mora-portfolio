@@ -490,6 +490,77 @@ img {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.work-hero {
+  padding-top: 1.2rem;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.story-card {
+  grid-column: span 6;
+  position: relative;
+  padding: 1.7rem;
+  border: 1px solid rgba(24, 21, 18, 0.14);
+  background: rgba(253, 250, 245, 0.8);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+}
+
+.story-card-feature,
+.story-card-wide {
+  grid-column: span 12;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  line-height: 1;
+  letter-spacing: -0.015em;
+}
+
+.story-summary {
+  margin-top: 1rem;
+  font-size: 1.16rem;
+  line-height: 1.45;
+  color: rgba(23, 21, 18, 0.92);
+}
+
+.story-card p + p {
+  margin-top: 1rem;
+}
+
+.story-note {
+  margin-top: 1.15rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(47, 107, 106, 0.18);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.98rem;
+}
+
+.story-metrics {
+  margin: 1.15rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.story-metrics li {
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(24, 21, 18, 0.08);
+}
+
+.anchor-target {
+  position: absolute;
+  top: -80px;
+}
+
 .work-card,
 .note-card,
 .timeline-card,
@@ -913,6 +984,7 @@ img {
 
   .stat-grid,
   .work-grid,
+  .story-grid,
   .principle-grid,
   .note-grid,
   .timeline-grid,
@@ -979,6 +1051,7 @@ img {
 
   .stat-grid,
   .work-grid,
+  .story-grid,
   .principle-grid,
   .note-grid,
   .timeline-grid,
