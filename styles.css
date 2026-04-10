@@ -494,6 +494,10 @@ img {
   padding-top: 1.2rem;
 }
 
+.work-hero .page-title {
+  max-width: none;
+}
+
 .work-stories {
   display: grid;
   gap: 1.2rem;
@@ -502,7 +506,7 @@ img {
 .work-story {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(260px, 0.58fr);
+  grid-template-columns: 1fr;
   gap: clamp(1.4rem, 3vw, 2.4rem);
   align-items: start;
   padding: clamp(1.5rem, 3vw, 2.25rem);
@@ -517,18 +521,22 @@ img {
   align-items: center;
 }
 
-.work-story-film {
-  display: block;
+.work-story-proof {
+  grid-template-columns: minmax(0, 0.72fr) minmax(320px, 1fr);
+}
+
+.work-story-heading {
+  grid-column: 1 / -1;
 }
 
 .work-story-copy {
   max-width: none;
 }
 
-.work-story h2 {
+.work-story-heading h2 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 5.6vw, 5rem);
+  font-size: clamp(2.5rem, 7vw, 6.4rem);
   line-height: 0.95;
   letter-spacing: -0.015em;
 }
@@ -576,8 +584,13 @@ img {
   gap: 0.8rem;
 }
 
+.work-proof-panel {
+  display: grid;
+  align-content: start;
+  gap: 0.8rem;
+}
+
 .work-proof-heading {
-  align-self: end;
   color: var(--accent);
   font-size: 1.05rem;
   font-weight: 700;
@@ -1031,7 +1044,8 @@ img {
   .cta-band,
   .dirk-storyband,
   .work-story,
-  .work-story-feature {
+  .work-story-feature,
+  .work-story-proof {
     grid-template-columns: 1fr;
   }
 
