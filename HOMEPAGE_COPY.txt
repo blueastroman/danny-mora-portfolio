@@ -1,145 +1,45 @@
 HOMEPAGE COPY
 
-TITLE
-Daniel Mora | Brand Marketer and Filmmaker
-
-META DESCRIPTION
-Daniel Mora is a marketing manager and filmmaker who brings a director's instinct to creator programs, brand strategy, and campaign work at Lufthansa.
-
-HEADER
-Brand name:
-Daniel Mora
-
-Brand subtitle:
-Brand, creator, and story-led marketing
-
-NAVIGATION
-Home / Work / About / Contact
-
 HERO
-Eyebrow:
-Daniel Mora / Marketing / Creator Partnerships / Film
+Headline: I build brand stories worth believing in.
+Body: I build the strategy, then find the story. The story says how it wants to be told.
 
-Headline:
-Marketing built on a filmmaker's instincts.
+SHORT VERSION OF ME
+Current role: Marketing Manager at Lufthansa Group, New York. Leading creator and partnership programs across Lufthansa, SWISS, and Austrian Airlines since 2022.
+Top highlight: Built a 35-creator ecosystem that generated 8M+ organic views and 30M+ paid impressions across three airlines.
+Where the instinct comes from: Years producing branded documentaries and purpose-led films trained me to think at the story level before anything else. That's what I bring to every brief.
 
-Body:
-Marketing Manager at Lufthansa in New York, leading influencer and partnership programs across entertainment, sports, and travel. Film is where the storytelling instinct comes from.
-
-Buttons:
-View selected work
-About me
-
-HERO SIDE PANEL
-Panel title:
-A short version of me.
-
-Row 1 label:
-Current role
-
-Row 1 body:
-Leading creator and partnership marketing at Lufthansa since 2022.
-
-Row 2 label:
-Top Highlight
-
-Row 2 body:
-Developed a global creator strategy with 10x+ ROI across entertainment, sports, and travel.
-
-Row 3 label:
-The foundation
-
-Row 3 body:
-Film and VFX work trained me to think in pacing, imagery, and story. That's what I bring to every brief.
-
-SELECTED IMPACT
-Section kicker:
-Key Highlights
-
-Section headline:
-2025 creator and paid media work.
-
-Section intro:
-A snapshot of influencer and paid performance across Lufthansa Group, including Lufthansa, SWISS, and Austrian Airlines.
-
-Stat 1 label:
-Creators
-
-Stat 1 number:
-35
-
-Stat 1 caption:
-A creator ecosystem built across multiple brand moments.
-
-Stat 2 label:
-Assets
-
-Stat 2 number:
-300+
-
-Stat 2 caption:
-Creative output across the broader creator program.
-
-Stat 3 label:
-Organic Views
-
-Stat 3 number:
-8M+
-
-Stat 3 caption:
-Creator-led organic performance across the ecosystem.
-
-Stat 4 label:
-Paid Impressions
-
-Stat 4 number:
-30M+
-
-Stat 4 caption:
-Scaled paid distribution supporting the program.
+HOW I THINK
+Headline: Four principles I work by.
+Principle 1
+Strategy before story.
+You can't find the right story until you know what the brand is trying to do. I start there.
+Principle 2
+Specificity is the strategy.
+Broad briefs produce generic stories. The best ones I've built started with one true thing.
+Principle 3
+Earn attention, don't demand it.
+A story no one asked for has to be worth the interruption. I hold everything to that standard.
+Principle 4
+The story says how it wants to be told.
+Format, medium, creator, campaign. Those are answers to a question the story asks first.
 
 FEATURED WORK
-Section kicker:
-Featured work
+Headline: Stories worth remembering.
+Card 1
+Title: Lufthansa Group
+Body: Creator and partnership storytelling at scale across three airlines. 35 creators. 300+ assets. Results that beat benchmark across every key metric.
+Card 2
+Title: Dirk Nowitzki Partnership
+Body: A global ambassador story for Lufthansa Allegris. One idea, one right person, one truth the brand could actually own.
+Card 3
+Title: Brand New World Studios
+Body: Purpose-led branded documentaries with Oprah Winfrey, Little Miss Flint, Hershey, and the Salvation Army. Stories that started with why, not what.
 
-Section headline:
-Work that earns attention.
-
-Card 1 title:
-Dirk Nowitzki Partnership
-
-Card 1 body:
-A global ambassador partnership for Lufthansa Allegris built around a single campaign idea: a seat fit for a 7-foot MVP.
-
-Card 2 title:
-Creator Programs
-
-Card 2 body:
-Influencer and partnership work across Lufthansa, SWISS, and Austrian Airlines, built for reach, made for real people.
-
-Card 3 title:
-Film and Post-Production
-
-Card 3 body:
-Brand films, documentaries, and short films. This is where the eye gets trained: pacing, light, what to cut, what to keep.
-
-CONTACT CTA
-Section kicker:
-Get in touch
-
-Section headline:
-Always glad to connect.
-
-Section body:
-If you want to talk brand work, creator strategy, or the intersection of marketing and film, reach out.
-
-Buttons:
-Contact
-More about me
+CONTACT
+Headline: Always glad to connect.
+Body: If you want to build brand stories worth believing in, reach out.
 
 FOOTER
-Line 1:
 Daniel Mora
-
-Line 2:
-Brand Marketer and Filmmaker
+Brand, Creator, and Story-led Marketing
