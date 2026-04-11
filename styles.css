@@ -350,6 +350,14 @@ img {
 }
 
 .about-simple {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.42fr);
+  align-items: start;
+  gap: clamp(2rem, 5vw, 4rem);
+  max-width: none;
+}
+
+.about-simple-text {
   max-width: 68rem;
 }
 
@@ -363,6 +371,24 @@ img {
 
 .about-simple-copy p {
   margin: 0;
+}
+
+.about-headshot-card {
+  aspect-ratio: 1 / 1;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(24, 21, 18, 0.14);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.about-headshot-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 52% 42%;
 }
 
 .spotlight-card {
@@ -1105,6 +1131,7 @@ span.work-index-action {
   .split-section,
   .contact-layout,
   .about-layout,
+  .about-simple,
   .case-study,
   .cta-band,
   .dirk-storyband,
@@ -1115,6 +1142,10 @@ span.work-index-action {
   .work-index-action {
     justify-self: start;
     padding-top: 0;
+  }
+
+  .about-headshot-card {
+    max-width: 24rem;
   }
 
   .stat-grid,
