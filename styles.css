@@ -1072,23 +1072,6 @@ span.work-index-action {
   color: var(--accent-cool);
 }
 
-.site-footer {
-  padding: 0 0 2.5rem;
-}
-
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-  padding-top: 1.5rem;
-  border-top: 2px solid rgba(23, 21, 18, 0.12);
-  color: var(--muted);
-  font-size: 0.82rem;
-  font-family: var(--font-mono);
-  letter-spacing: 0.02em;
-}
-
 [data-reveal] {
   opacity: 0;
   transform: translateY(24px);
@@ -1218,10 +1201,6 @@ span.work-index-action {
   .case-study .meta-grid,
   .dirk-facts {
     grid-template-columns: 1fr;
-  }
-
-  .footer-inner {
-    flex-direction: column;
   }
 
   .dirk-copy {
