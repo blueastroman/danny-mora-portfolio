@@ -966,6 +966,129 @@ span.work-index-action {
   background: transparent;
 }
 
+.film-hero {
+  max-width: none;
+  padding-bottom: clamp(2rem, 5vw, 4rem);
+  border-bottom: 1px solid rgba(47, 107, 106, 0.2);
+}
+
+.film-page .page-title,
+.film-page .section-title {
+  max-width: none;
+}
+
+.film-page .page-intro {
+  max-width: none;
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+}
+
+.film-credit-section {
+  display: grid;
+  gap: clamp(1.4rem, 3vw, 2.4rem);
+}
+
+.film-section-heading .section-title {
+  font-size: clamp(2.8rem, 7vw, 5.6rem);
+}
+
+.film-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.35rem);
+}
+
+.film-card {
+  min-width: 0;
+}
+
+.film-card a,
+.film-award-card {
+  display: grid;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(24, 21, 18, 0.14);
+  border-radius: 28px;
+  background: rgba(253, 250, 245, 0.84);
+  box-shadow: 0 18px 50px rgba(24, 21, 18, 0.1);
+}
+
+.film-card a {
+  color: inherit;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.film-card a:hover,
+.film-card a:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(47, 107, 106, 0.36);
+  box-shadow: 0 24px 64px rgba(24, 21, 18, 0.14);
+}
+
+.film-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: rgba(24, 21, 18, 0.08);
+}
+
+.film-card-copy {
+  display: grid;
+  gap: 0.55rem;
+  padding: clamp(1.2rem, 2.3vw, 1.7rem);
+}
+
+.film-card-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 3vw, 2.45rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.005em;
+}
+
+.film-card-meta {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.film-card-note {
+  color: rgba(23, 21, 18, 0.82);
+  line-height: 1.45;
+}
+
+.film-card-action {
+  width: fit-content;
+  margin-top: 0.35rem;
+  color: var(--accent);
+  border-bottom: 1px solid rgba(47, 107, 106, 0.42);
+  font-weight: 700;
+}
+
+.film-award {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(280px, 1fr);
+  gap: clamp(1.4rem, 3vw, 2.4rem);
+  align-items: start;
+}
+
+.film-award .section-title {
+  font-size: clamp(2.8rem, 7vw, 5.6rem);
+}
+
+.film-award-card {
+  padding: clamp(1.35rem, 2.5vw, 2rem);
+}
+
+.film-award-card h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1;
+}
+
+.film-award-card p {
+  margin: 0.9rem 0 0;
+}
+
 .dirk-page .dirk-title {
   font-family: var(--font-display);
   font-size: clamp(2.8rem, 5.4vw, 4.9rem);
@@ -1135,6 +1258,7 @@ span.work-index-action {
   .case-study,
   .cta-band,
   .dirk-storyband,
+  .film-award,
   .work-index-row {
     grid-template-columns: 1fr;
   }
@@ -1222,6 +1346,7 @@ span.work-index-action {
   .home-proof,
   .home-proof .hero-ledger,
   .home-work-showcase,
+  .film-grid,
   .principle-row {
     grid-template-columns: 1fr;
   }
