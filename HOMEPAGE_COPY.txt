@@ -18,8 +18,9 @@ Tile 2
 Kicker: Brand Ambassador
 Headline: A seat fit for an MVP.
 Tile 3
-Kicker: Film Background
-Headline: Visual effects, films, and production instincts.
+Kicker: Creative Background
+Headline: Film Production
+Subheadline: Before the briefs, there were scripts.
 
 CONTACT
 Headline: Always glad to connect.
