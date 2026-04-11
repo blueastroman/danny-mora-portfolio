@@ -839,6 +839,10 @@ span.work-index-action {
   transform: scale(1.035);
 }
 
+.home-work-tile-dirk img {
+  object-position: right center;
+}
+
 .home-work-tile-copy {
   position: relative;
   z-index: 1;
@@ -865,6 +869,11 @@ span.work-index-action {
 
 .home-work-tile:not(.home-work-tile-large) .home-work-headline {
   font-size: clamp(2rem, 4.2vw, 3.8rem);
+}
+
+.home-work-subhead {
+  font-size: clamp(1rem, 1.7vw, 1.35rem);
+  font-weight: 700;
 }
 
 .home-work-tile-paper {
