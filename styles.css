@@ -19,7 +19,6 @@
   --font-display: "Georgia", "Times New Roman", serif;
   --font-sans: "Inter", sans-serif;
   --font-mono: "Inter", sans-serif;
-  --paper-texture: url("assets/textures/paper-texture-vertical.jpg");
 }
 
 *,
@@ -37,38 +36,13 @@ body {
   font-family: var(--font-sans);
   color: var(--ink);
   background:
-    linear-gradient(rgba(243, 236, 222, 0.58), rgba(243, 236, 222, 0.58)),
-    var(--paper-texture),
     radial-gradient(circle at top left, rgba(47, 107, 106, 0.08), transparent 22%),
     linear-gradient(180deg, #faf5eb 0%, var(--paper) 55%, #efe5d5 100%);
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: auto, cover, auto, auto;
-  background-position: top left, center top, top left, top left;
-  background-blend-mode: normal, multiply, normal, normal;
-  min-height: 100vh;
-  line-height: 1.6;
-}
-
-.work-page {
-  background:
-    radial-gradient(circle at top left, rgba(47, 107, 106, 0.06), transparent 24%),
-    linear-gradient(180deg, #f8f1e7 0%, var(--paper) 58%, #efe5d5 100%);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: top left;
-  background-blend-mode: normal;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.32), transparent 18%),
-    repeating-linear-gradient(0deg, rgba(24, 21, 18, 0.018) 0, rgba(24, 21, 18, 0.018) 1px, transparent 1px, transparent 5px),
-    repeating-linear-gradient(90deg, rgba(24, 21, 18, 0.01) 0, rgba(24, 21, 18, 0.01) 1px, transparent 1px, transparent 7px);
-  opacity: 0.42;
+  min-height: 100vh;
+  line-height: 1.6;
 }
 
 a {
