@@ -266,8 +266,7 @@ img {
   align-content: start;
 }
 
-.panel-heading,
-.hero-panel-title {
+.panel-heading {
   margin: 0;
   font-family: var(--font-display);
   font-size: 1.9rem;
@@ -275,8 +274,7 @@ img {
   letter-spacing: -0.03em;
 }
 
-.panel-list,
-.hero-ledger {
+.panel-list {
   display: grid;
   gap: 0.75rem;
   margin: 0;
@@ -287,25 +285,9 @@ img {
   list-style: none;
 }
 
-.panel-list li,
-.ledger-row {
+.panel-list li {
   padding: 0.9rem 0;
   border-top: 1px solid rgba(24, 21, 18, 0.1);
-}
-
-.ledger-label {
-  display: inline-block;
-  margin-bottom: 0.35rem;
-  color: var(--muted);
-  font-family: var(--font-mono);
-  font-size: 0.88rem;
-  letter-spacing: 0.02em;
-}
-
-.ledger-value {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.45;
 }
 
 .quote-card {
@@ -794,29 +776,6 @@ span.work-index-action {
 .home-page .hero-lead {
   max-width: none;
   font-size: clamp(1.08rem, 1.8vw, 1.35rem);
-}
-
-.home-proof {
-  display: grid;
-  grid-template-columns: minmax(12rem, 0.55fr) minmax(0, 1fr);
-  gap: clamp(1.3rem, 4vw, 3rem);
-  padding-top: clamp(1.2rem, 3vw, 2rem);
-  border-top: 1px solid rgba(47, 107, 106, 0.2);
-}
-
-.home-proof .hero-panel-title {
-  max-width: 12ch;
-  color: var(--accent);
-}
-
-.home-proof .hero-ledger {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1rem, 2.5vw, 1.6rem);
-}
-
-.home-proof .ledger-row {
-  padding: 0;
-  border-top: 0;
 }
 
 .home-page .section-heading {
@@ -1343,8 +1302,6 @@ span.work-index-action {
     white-space: normal;
   }
 
-  .home-proof,
-  .home-proof .hero-ledger,
   .home-work-showcase,
   .film-grid,
   .principle-row {
