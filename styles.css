@@ -49,6 +49,16 @@ body {
   line-height: 1.6;
 }
 
+.work-page {
+  background:
+    radial-gradient(circle at top left, rgba(47, 107, 106, 0.06), transparent 24%),
+    linear-gradient(180deg, #f8f1e7 0%, var(--paper) 58%, #efe5d5 100%);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top left;
+  background-blend-mode: normal;
+}
+
 body::before {
   content: "";
   position: fixed;
