@@ -148,27 +148,6 @@ img {
   padding-top: 0.2rem;
 }
 
-.eyebrow,
-.section-kicker {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
-  color: color-mix(in srgb, var(--accent) 72%, var(--muted) 28%);
-  letter-spacing: 0.04em;
-  font-family: var(--font-mono);
-  text-transform: none;
-}
-
-.eyebrow::before,
-.section-kicker::before {
-  content: "";
-  width: 1.5rem;
-  height: 1px;
-  background: rgba(47, 107, 106, 0.46);
-}
-
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.9fr);
@@ -800,11 +779,6 @@ span.work-index-action {
 
 .home-page .section-heading {
   max-width: 60rem;
-}
-
-.home-page .section-kicker,
-.home-page .eyebrow {
-  margin-bottom: 1.1rem;
 }
 
 .home-page .section-title {
