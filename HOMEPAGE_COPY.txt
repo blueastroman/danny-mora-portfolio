@@ -11,15 +11,15 @@ Where the instinct comes from: Years producing branded documentaries and purpose
 
 FEATURED WORK
 Headline: Stories worth remembering.
-Card 1
-Title: Lufthansa Group
-Body: Creator and partnership storytelling at scale across three airlines. 35 creators. 300+ assets. Results that beat benchmark across every key metric.
-Card 2
-Title: Dirk Nowitzki Partnership
-Body: A global ambassador story for Lufthansa Allegris. One idea, one right person, one truth the brand could actually own.
-Card 3
-Title: Brand New World Studios
-Body: Purpose-led branded documentaries with Oprah Winfrey, Little Miss Flint, Hershey, and the Salvation Army. Stories that started with why, not what.
+Tile 1
+Kicker: Creator Program
+Headline: 35 creator trips across three airlines.
+Tile 2
+Kicker: Brand Ambassador
+Headline: A seat fit for an MVP.
+Tile 3
+Kicker: Film Background
+Headline: Visual effects, films, and production instincts.
 
 CONTACT
 Headline: Always glad to connect.
