@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
 :root {
   --paper: #f3ecde;
   --paper-deep: #e6dbc8;
@@ -15,8 +17,8 @@
   --radius-sm: 3px;
   --max-width: 1160px;
   --font-display: "Georgia", "Times New Roman", serif;
-  --font-sans: "Georgia", "Times New Roman", serif;
-  --font-mono: "Georgia", "Times New Roman", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "Inter", sans-serif;
   --paper-texture: url("assets/textures/paper-texture-vertical.jpg");
 }
 
