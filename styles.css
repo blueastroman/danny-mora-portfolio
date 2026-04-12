@@ -869,7 +869,7 @@ span.work-index-action {
 
 .home-work-tile {
   position: relative;
-  min-height: clamp(24rem, 46vw, 34rem);
+  aspect-ratio: 1 / 1;
   display: grid;
   align-items: end;
   overflow: hidden;
@@ -877,11 +877,6 @@ span.work-index-action {
   border: 1px solid rgba(24, 21, 18, 0.12);
   background: #111;
   box-shadow: 0 22px 60px rgba(24, 21, 18, 0.12);
-}
-
-.home-work-tile-large {
-  grid-column: 1 / -1;
-  min-height: clamp(28rem, 58vw, 42rem);
 }
 
 .home-work-tile img {
@@ -935,7 +930,7 @@ span.work-index-action {
   letter-spacing: -0.01em;
 }
 
-.home-work-tile:not(.home-work-tile-large) .home-work-headline {
+.home-work-tile .home-work-headline {
   font-size: clamp(2rem, 4.2vw, 3.8rem);
 }
 
@@ -1402,10 +1397,9 @@ span.work-index-action {
     gap: 0.5rem;
   }
 
-  .home-work-tile,
-  .home-work-tile-large {
+  .home-work-tile {
+    aspect-ratio: auto;
     min-height: 28rem;
-    grid-column: auto;
   }
 
   .stat-grid,
