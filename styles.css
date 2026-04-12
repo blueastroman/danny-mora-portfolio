@@ -155,7 +155,7 @@ img {
 }
 
 .section-tight {
-  padding: var(--section-padding) 0;
+  padding: clamp(64px, 8vw, 96px) 0 var(--section-padding);
 }
 
 .hero {
