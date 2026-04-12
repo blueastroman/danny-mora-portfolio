@@ -856,12 +856,15 @@ span.work-index-action {
 .home-work-showcase,
 .principle-list {
   display: grid;
-  margin-top: clamp(1.4rem, 3vw, 2.2rem);
 }
 
 .home-work-showcase {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(1rem, 2vw, 1.35rem);
+}
+
+.principle-list {
+  margin-top: clamp(1.4rem, 3vw, 2.2rem);
 }
 
 .home-work-tile {
@@ -953,6 +956,16 @@ span.work-index-action {
 
 .home-work-tile-paper .home-work-tile-copy {
   color: var(--ink);
+}
+
+.home-work-tile-dark {
+  background: var(--dark);
+}
+
+.home-work-tile-dark::after {
+  background:
+    radial-gradient(circle at 78% 16%, rgba(45, 92, 56, 0.46), transparent 30%),
+    linear-gradient(180deg, rgba(22, 20, 18, 0.02), rgba(22, 20, 18, 0.34));
 }
 
 .principle-row:last-child {
