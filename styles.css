@@ -947,6 +947,13 @@ span.work-index-action {
   font-size: clamp(2.8rem, 7vw, 5.6rem);
 }
 
+.film-section-heading p {
+  max-width: none;
+  margin: 0.85rem 0 0;
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  color: rgba(23, 21, 18, 0.82);
+}
+
 .film-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
