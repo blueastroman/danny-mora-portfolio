@@ -330,21 +330,20 @@ img {
 }
 
 .about-simple {
+  max-width: none;
+}
+
+.about-body {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: start;
   gap: clamp(2rem, 5vw, 4rem);
-  max-width: none;
-}
-
-.about-simple-text {
-  max-width: none;
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .about-simple-copy {
   display: grid;
   gap: 1.25rem;
-  margin-top: clamp(1.5rem, 3vw, 2.5rem);
   font-size: clamp(1.15rem, 2vw, 1.55rem);
   line-height: 1.55;
 }
@@ -358,7 +357,7 @@ img {
   margin: 0;
   overflow: hidden;
   border: 1px solid rgba(24, 21, 18, 0.14);
-  border-radius: var(--radius);
+  border-radius: 28px;
   background: var(--surface);
   box-shadow: var(--shadow);
 }
@@ -1211,7 +1210,7 @@ span.work-index-action {
   .split-section,
   .contact-layout,
   .about-layout,
-  .about-simple,
+  .about-body,
   .case-study,
   .cta-band,
   .dirk-storyband,
