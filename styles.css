@@ -8,10 +8,10 @@
   --ink: #181512;
   --muted: #645c52;
   --line: rgba(24, 21, 18, 0.18);
-  --accent: #2f6b6a;
-  --accent-soft: #a8c3bc;
-  --accent-cool: #2f6b6a;
-  --success: #405c4a;
+  --accent: #2D5C38;
+  --accent-soft: #A8BFAE;
+  --accent-cool: #2D5C38;
+  --success: #2D5C38;
   --shadow: 6px 6px 0 rgba(24, 21, 18, 0.04);
   --radius: 3px;
   --radius-sm: 3px;
@@ -131,7 +131,7 @@ img {
 .site-nav a:focus-visible,
 .site-nav a[aria-current="page"] {
   color: var(--accent);
-  border-color: rgba(47, 107, 106, 0.38);
+  border-color: rgba(45, 92, 56, 0.38);
 }
 
 .page-main {
@@ -230,20 +230,20 @@ img {
 }
 
 .button {
-  background: rgba(47, 107, 106, 0.12);
+  background: rgba(45, 92, 56, 0.12);
   color: var(--ink);
-  border: 2px solid rgba(47, 107, 106, 0.46);
+  border: 2px solid rgba(45, 92, 56, 0.46);
 }
 
 .button-secondary {
   background: transparent;
   color: var(--accent);
-  border: 2px solid rgba(47, 107, 106, 0.24);
+  border: 2px solid rgba(45, 92, 56, 0.24);
 }
 
 .button-ghost {
   color: var(--accent);
-  border: 2px solid rgba(47, 107, 106, 0.24);
+  border: 2px solid rgba(45, 92, 56, 0.24);
   background: transparent;
 }
 
@@ -254,7 +254,7 @@ img {
 .button-secondary:focus-visible,
 .button-ghost:focus-visible {
   transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0 rgba(47, 107, 106, 0.14);
+  box-shadow: 3px 3px 0 rgba(45, 92, 56, 0.14);
 }
 
 .hero-panel {
@@ -435,7 +435,7 @@ img {
 .stat-card {
   padding: 1.5rem;
   background: rgba(248, 248, 248, 0.78);
-  border-color: rgba(47, 107, 106, 0.14);
+  border-color: rgba(45, 92, 56, 0.14);
 }
 
 .stat-label {
@@ -495,14 +495,14 @@ img {
   gap: clamp(1rem, 3vw, 2rem);
   align-items: start;
   padding: clamp(1.4rem, 3.4vw, 2.6rem) 0;
-  border-top: 1px solid rgba(47, 107, 106, 0.22);
+  border-top: 1px solid rgba(45, 92, 56, 0.22);
   background: transparent;
   box-shadow: none;
   border-radius: 0;
 }
 
 .work-index-row:last-child {
-  border-bottom: 1px solid rgba(47, 107, 106, 0.22);
+  border-bottom: 1px solid rgba(45, 92, 56, 0.22);
 }
 
 .work-index-number {
@@ -539,7 +539,7 @@ img {
   align-self: start;
   padding-top: 1.9rem;
   color: var(--accent);
-  border-bottom: 1px solid rgba(47, 107, 106, 0.42);
+  border-bottom: 1px solid rgba(45, 92, 56, 0.42);
   font-weight: 700;
   white-space: nowrap;
 }
@@ -588,8 +588,8 @@ span.work-index-action {
 .work-link:hover,
 .work-link:focus-visible {
   transform: translate(-2px, -2px);
-  box-shadow: 8px 8px 0 rgba(47, 107, 106, 0.12);
-  border-color: rgba(47, 107, 106, 0.28);
+  box-shadow: 8px 8px 0 rgba(45, 92, 56, 0.12);
+  border-color: rgba(45, 92, 56, 0.28);
 }
 
 .work-link:focus-visible {
@@ -608,7 +608,7 @@ span.work-index-action {
   display: inline-flex;
   padding: 0.38rem 0.7rem;
   border-radius: 0;
-  border: 1px solid rgba(47, 107, 106, 0.18);
+  border: 1px solid rgba(45, 92, 56, 0.18);
   background: transparent;
   color: color-mix(in srgb, var(--accent) 78%, var(--muted) 22%);
   font-size: 0.86rem;
@@ -752,7 +752,7 @@ span.work-index-action {
   gap: clamp(1.6rem, 4vw, 2.8rem);
   padding-top: clamp(2rem, 5vw, 4rem);
   padding-bottom: clamp(2.5rem, 6vw, 4.5rem);
-  border-bottom: 1px solid rgba(47, 107, 106, 0.2);
+  border-bottom: 1px solid rgba(45, 92, 56, 0.2);
 }
 
 .home-page .hero-copy {
@@ -881,7 +881,7 @@ span.work-index-action {
 .home-work-tile-paper::after {
   background:
     linear-gradient(180deg, rgba(245, 245, 245, 0.04), rgba(245, 245, 245, 0.52)),
-    radial-gradient(circle at 20% 20%, rgba(47, 107, 106, 0.22), transparent 30%);
+    radial-gradient(circle at 20% 20%, rgba(45, 92, 56, 0.22), transparent 30%);
 }
 
 .home-work-tile-paper .home-work-tile-copy {
@@ -889,7 +889,7 @@ span.work-index-action {
 }
 
 .principle-row:last-child {
-  border-bottom: 1px solid rgba(47, 107, 106, 0.22);
+  border-bottom: 1px solid rgba(45, 92, 56, 0.22);
 }
 
 .principle-row > span {
@@ -902,7 +902,7 @@ span.work-index-action {
   grid-template-columns: 3.5rem minmax(0, 1fr);
   gap: clamp(1rem, 3vw, 2rem);
   padding: 1.25rem 0;
-  border-top: 1px solid rgba(47, 107, 106, 0.18);
+  border-top: 1px solid rgba(45, 92, 56, 0.18);
 }
 
 .principle-row h3 {
@@ -925,7 +925,7 @@ span.work-index-action {
 .film-hero {
   max-width: none;
   padding-bottom: clamp(2rem, 5vw, 4rem);
-  border-bottom: 1px solid rgba(47, 107, 106, 0.2);
+  border-bottom: 1px solid rgba(45, 92, 56, 0.2);
 }
 
 .film-page .page-title,
@@ -976,7 +976,7 @@ span.work-index-action {
 .film-card a:hover,
 .film-card a:focus-visible {
   transform: translateY(-2px);
-  border-color: rgba(47, 107, 106, 0.36);
+  border-color: rgba(45, 92, 56, 0.36);
   box-shadow: 0 24px 64px rgba(24, 21, 18, 0.14);
 }
 
@@ -1015,7 +1015,7 @@ span.work-index-action {
   width: fit-content;
   margin-top: 0.35rem;
   color: var(--accent);
-  border-bottom: 1px solid rgba(47, 107, 106, 0.42);
+  border-bottom: 1px solid rgba(45, 92, 56, 0.42);
   font-weight: 700;
 }
 
