@@ -758,10 +758,10 @@ span.work-index-action {
 
 .home-page .home-hero {
   grid-template-columns: 1fr;
-  min-height: 100svh;
+  min-height: clamp(15rem, 28svh, 20rem);
   align-items: center;
   gap: 0;
-  padding: 0;
+  padding: clamp(2rem, 5svh, 4rem) 0 clamp(1.5rem, 4svh, 3rem);
   border-bottom: 0;
 }
 
@@ -775,7 +775,7 @@ span.work-index-action {
 
 .home-page .hero-title {
   max-width: 11ch;
-  font-size: clamp(64px, 10vw, 148px);
+  font-size: clamp(56px, 8vw, 124px);
   line-height: 0.93;
   letter-spacing: -0.02em;
 }
@@ -814,12 +814,12 @@ span.work-index-action {
 .partner-strip {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  padding: 28px 0;
+  padding: 20px 0;
 }
 
 .partner-strip-inner {
   display: grid;
-  gap: 16px;
+  gap: 10px;
   color: var(--muted);
   text-align: center;
 }
@@ -860,7 +860,13 @@ span.work-index-action {
 
 .home-work-showcase {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: min(100%, 1040px, max(680px, calc(100svh - 18rem)));
+  margin-inline: auto;
   gap: clamp(1rem, 2vw, 1.35rem);
+}
+
+.home-page .section[aria-label="Featured work"] {
+  padding: clamp(1.25rem, 3svh, 2.5rem) 0 clamp(2rem, 5svh, 4rem);
 }
 
 .principle-list {
