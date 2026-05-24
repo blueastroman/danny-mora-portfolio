@@ -548,6 +548,7 @@ span.work-index-action {
 .dirk-video {
   width: 100%;
   aspect-ratio: 16 / 9;
+  object-fit: cover;
   background: #000;
 }
 
