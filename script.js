@@ -1,3 +1,5 @@
+document.querySelectorAll(".layer").forEach(l => l.style.pointerEvents = "none");
+
 const siteHeader = document.querySelector(".site-header");
 
 const updateNavState = () => {
