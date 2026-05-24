@@ -502,14 +502,26 @@ span.work-index-action {
   margin-top: 1.8rem;
 }
 
+.cs-dateline {
+  margin-bottom: 1.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 .dirk-hero {
-  text-align: center;
   padding-block: 4rem 3rem;
+  border-bottom: 1px solid var(--line);
 }
 
 .dirk-title {
-  font-size: 3.5rem;
-  line-height: 1.05;
+  font-size: clamp(3.5rem, 8vw, 7.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  max-width: 18ch;
 }
 
 .dirk-subtitle {
@@ -713,8 +725,7 @@ span.work-index-action {
   .section-title,
   .work-index-main h2,
   .film-section-heading .section-title,
-  .film-award .section-title,
-  .dirk-title {
+  .film-award .section-title {
     font-size: 3.4rem;
   }
 
