@@ -504,12 +504,12 @@ span.work-index-action {
 
 .dirk-hero {
   text-align: center;
+  padding-block: 4rem 3rem;
 }
 
 .dirk-title {
-  font-size: 5rem;
-  line-height: 0.95;
-  white-space: nowrap;
+  font-size: 3.5rem;
+  line-height: 1.05;
 }
 
 .dirk-subtitle {
@@ -820,11 +820,7 @@ span.work-index-action {
   .section-title,
   .film-section-heading .section-title,
   .film-award .section-title {
-    font-size: 2.7rem;
-  }
-
-  .dirk-title {
-    white-space: normal;
+    font-size: 2.4rem;
   }
 
   .dirk-subtitle {
