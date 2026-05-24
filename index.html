@@ -34,6 +34,7 @@
       will-change: transform;
       background-size: cover;
       background-position: center;
+      pointer-events: none;
     }
 
     /* Replace each layer's background-image with your Photoshop PNG export:
@@ -53,7 +54,7 @@
     #l-mid { background: transparent; }
 
     /* ─ Ad placement base style ─ */
-    .ad { cursor:pointer; text-decoration:none;
+    .ad { cursor:pointer; text-decoration:none; pointer-events: auto;
       position: absolute;
       overflow: hidden;
       border-radius: 3px;
@@ -319,7 +320,7 @@
        ║  → Replace with: layers/07-phone.png        ║
        ╚══════════════════════════════════════════════╝ -->
   <div class="layer" id="l-phone" data-depth="3.2">
-    <div id="phone-wrap" onclick="window.location.href='dirk.html'" style="position:absolute;bottom:4%;right:22%;width:7%;cursor:pointer;">
+    <div id="phone-wrap" onclick="window.location.href='dirk.html'" style="position:absolute;bottom:4%;right:22%;width:7%;cursor:pointer;pointer-events:auto;">
       <!-- Phone shell -->
       <div style="width:100%;padding-top:210%;position:relative;">
         <div style="position:absolute;inset:0;background:#0e0e14;border-radius:16px;
