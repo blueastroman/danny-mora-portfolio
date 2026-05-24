@@ -552,6 +552,10 @@ span.work-index-action {
   background: #000;
 }
 
+.dirk-body {
+  padding-block-start: 3rem;
+}
+
 .dirk-storyband {
   display: grid;
   grid-template-columns: minmax(0, var(--narrow-max)) minmax(320px, 1fr);
