@@ -1,1 +1,8 @@
-{"data":"Y29uc3Qgc2l0ZUhlYWRlciA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoIi5zaXRlLWhlYWRlciIpOwoKY29uc3QgdXBkYXRlTmF2U3RhdGUgPSAoKSA9PiB7CiAgc2l0ZUhlYWRlcj8uY2xhc3NMaXN0LnRvZ2dsZSgic29saWQiLCB3aW5kb3cuc2Nyb2xsWSA+IDQwKTsKfTsKCnVwZGF0ZU5hdlN0YXRlKCk7CndpbmRvdy5hZGRFdmVudExpc3RlbmVyKCJzY3JvbGwiLCB1cGRhdGVOYXZTdGF0ZSwgeyBwYXNzaXZlOiB0cnVlIH0pOwo="}
+const siteHeader = document.querySelector(".site-header");
+
+const updateNavState = () => {
+  siteHeader?.classList.toggle("solid", window.scrollY > 40);
+};
+
+updateNavState();
+window.addEventListener("scroll", updateNavState, { passive: true });
