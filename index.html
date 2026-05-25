@@ -60,6 +60,40 @@
       overflow: hidden;
       border-radius: 3px;
       background: linear-gradient(135deg, #0b2455 0%, #1a4a8a 60%, #0d1e3a 100%);
+      box-shadow: 0 0 0 0px rgba(255,255,255,0);
+      transition: box-shadow 0.25s ease, filter 0.25s ease, transform 0.25s ease;
+    }
+    .ad:hover {
+      box-shadow: 0 0 0 1.5px rgba(255,255,255,0.55), 0 0 24px rgba(255,255,255,0.1);
+      filter: brightness(1.18);
+      transform: scale(1.025);
+    }
+    .ad::after {
+      content: 'VIEW ↗';
+      position: absolute;
+      top: 8px; right: 9px;
+      font-family: 'DM Mono', monospace;
+      font-size: 6px;
+      letter-spacing: 0.22em;
+      color: rgba(255,255,255,0.95);
+      background: rgba(255,255,255,0.14);
+      padding: 3px 5px;
+      border-radius: 2px;
+      opacity: 0;
+      transform: translateY(-3px);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      pointer-events: none;
+    }
+    .ad:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    #phone-wrap {
+      transition: filter 0.25s ease, transform 0.25s ease;
+    }
+    #phone-wrap:hover {
+      filter: brightness(1.12) drop-shadow(0 0 8px rgba(255,255,255,0.25));
+      transform: scale(1.03) translateY(-2px);
     }
 
     .ad-label {
