@@ -39,15 +39,42 @@
 
         <section class="dirk-video-block" aria-label="Dirk campaign video">
           <div class="dirk-video-frame">
-            <video
-              class="dirk-video"
-              controls
-              playsinline
-              preload="metadata"
-              poster="assets/dirk/dirk-bed.jpg"
-            >
-              <source src="assets/dirk/dirk-allegris.mp4" type="video/mp4">
-            </video>
+            <div class="video-player" id="dirk-player">
+              <video
+                class="dirk-video"
+                id="dirk-video"
+                playsinline
+                preload="metadata"
+                poster="assets/dirk/dirk-bed.jpg"
+              >
+                <source src="assets/dirk/dirk-allegris.mp4" type="video/mp4">
+              </video>
+
+              <!-- Centered play button — visible when paused -->
+              <button class="vp-center-play" id="vp-center-play" aria-label="Play video">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+
+              <!-- Bottom controls bar -->
+              <div class="vp-overlay" aria-hidden="true">
+                <div class="vp-controls">
+                  <button class="vp-btn vp-play-btn" id="vp-play-btn" aria-label="Play">
+                    <svg class="vp-icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    <svg class="vp-icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                  </button>
+                  <div class="vp-progress-wrap" id="vp-progress-wrap">
+                    <div class="vp-progress-track">
+                      <div class="vp-progress-fill" id="vp-progress-fill"></div>
+                      <div class="vp-progress-thumb" id="vp-progress-thumb"></div>
+                    </div>
+                  </div>
+                  <div class="vp-time" id="vp-time">0:00 / 0:15</div>
+                  <button class="vp-btn vp-fs-btn" id="vp-fs-btn" aria-label="Fullscreen">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -83,6 +110,93 @@
 
       </div>
     </main>
+    <script>
+    (function () {
+      const player    = document.getElementById('dirk-player');
+      const video     = document.getElementById('dirk-video');
+      const centerBtn = document.getElementById('vp-center-play');
+      const playBtn   = document.getElementById('vp-play-btn');
+      const progWrap  = document.getElementById('vp-progress-wrap');
+      const progFill  = document.getElementById('vp-progress-fill');
+      const progThumb = document.getElementById('vp-progress-thumb');
+      const timeEl    = document.getElementById('vp-time');
+      const fsBtn     = document.getElementById('vp-fs-btn');
+      if (!player || !video) return;
+
+      function fmt(s) {
+        if (!isFinite(s)) return '0:00';
+        return Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0');
+      }
+
+      function toggle() { video.paused ? video.play() : video.pause(); }
+
+      video.addEventListener('play', () => {
+        player.classList.add('vp-playing');
+        playBtn.setAttribute('aria-label', 'Pause');
+        showControls();
+      });
+      video.addEventListener('pause', () => {
+        player.classList.remove('vp-playing');
+        player.classList.add('vp-controls-on');
+        playBtn.setAttribute('aria-label', 'Play');
+      });
+      video.addEventListener('ended', () => {
+        player.classList.remove('vp-playing');
+        player.classList.add('vp-controls-on');
+      });
+
+      video.addEventListener('loadedmetadata', () => {
+        timeEl.textContent = '0:00 / ' + fmt(video.duration);
+      });
+      video.addEventListener('timeupdate', () => {
+        const pct = video.duration ? (video.currentTime / video.duration) * 100 : 0;
+        progFill.style.width = pct + '%';
+        progThumb.style.left = pct + '%';
+        timeEl.textContent = fmt(video.currentTime) + ' / ' + fmt(video.duration);
+      });
+
+      // Scrubbing
+      let dragging = false;
+      function seekFrom(e) {
+        const r = progWrap.getBoundingClientRect();
+        video.currentTime = Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)) * (video.duration || 0);
+      }
+      progWrap.addEventListener('mousedown', e => { dragging = true; seekFrom(e); });
+      document.addEventListener('mousemove', e => { if (dragging) seekFrom(e); });
+      document.addEventListener('mouseup', () => { dragging = false; });
+
+      // Fullscreen
+      fsBtn.addEventListener('click', () => {
+        document.fullscreenElement ? document.exitFullscreen() : player.requestFullscreen?.();
+      });
+
+      // Auto-hide controls
+      let hideTimer;
+      function showControls() {
+        player.classList.add('vp-controls-on');
+        clearTimeout(hideTimer);
+        if (!video.paused) {
+          hideTimer = setTimeout(() => player.classList.remove('vp-controls-on'), 2500);
+        }
+      }
+      player.addEventListener('mousemove',  showControls);
+      player.addEventListener('mouseenter', showControls);
+      player.addEventListener('mouseleave', () => {
+        clearTimeout(hideTimer);
+        if (!video.paused) player.classList.remove('vp-controls-on');
+      });
+      player.addEventListener('touchstart', showControls, { passive: true });
+
+      // Click targets
+      centerBtn.addEventListener('click', () => video.play());
+      playBtn.addEventListener('click', toggle);
+      video.addEventListener('click', toggle);
+
+      // Initial state
+      player.classList.add('vp-controls-on');
+    })();
+    </script>
+
     <footer class="site-footer">
       <div class="wrapper footer-inner">
         <span>© 2026 Daniel Mora</span>
