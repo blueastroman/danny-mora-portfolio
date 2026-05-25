@@ -8,3 +8,18 @@ const updateNavState = () => {
 
 updateNavState();
 window.addEventListener("scroll", updateNavState, { passive: true });
+
+// Content loader — reads content.json and populates [data-content] elements
+(function () {
+  fetch("/content.json")
+    .then(r => r.json())
+    .then(data => {
+      document.querySelectorAll("[data-content]").forEach(el => {
+        const val = el.getAttribute("data-content")
+          .split(".")
+          .reduce((o, k) => o?.[k], data);
+        if (val != null && val !== "") el.textContent = val;
+      });
+    })
+    .catch(() => {}); // silently fail — hardcoded content stays visible
+})();

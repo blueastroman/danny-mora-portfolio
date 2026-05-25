@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin · Daniel Mora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:           #111110;
+      --surface:      #1c1c1a;
+      --surface-2:    #232321;
+      --border:       rgba(255,255,255,0.08);
+      --border-focus: rgba(255,255,255,0.28);
+      --text:         rgba(255,255,255,0.88);
+      --muted:        rgba(255,255,255,0.36);
+      --accent:       #5a8a64;
+      --accent-hover: #4a7a54;
+      --err:          #d97070;
+      --radius:       6px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Gate ─────────────────────────────────────── */
+    #gate {
+      position: fixed; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--bg);
+      z-index: 200;
+    }
+
+    .gate-inner {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 1rem;
+      width: min(100%, 300px);
+      padding: 2rem;
+    }
+
+    .gate-wordmark {
+      font-family: Georgia, serif;
+      font-size: 1.05rem;
+      font-weight: 300;
+      margin-bottom: 0.25rem;
+    }
+
+    .gate-sub {
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    /* ── Inputs ────────────────────────────────────── */
+    input[type="text"],
+    input[type="password"],
+    textarea {
+      width: 100%;
+      padding: 0.55rem 0.75rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 1.5;
+      outline: none;
+      transition: border-color 0.15s;
+      resize: vertical;
+    }
+    input:focus, textarea:focus { border-color: var(--border-focus); }
+    textarea { min-height: 72px; }
+
+    /* ── Buttons ───────────────────────────────────── */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 0.55rem 1.1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+      white-space: nowrap;
+    }
+    .btn:hover { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.18); }
+
+    .btn-primary {
+      background: var(--accent); border-color: var(--accent); color: #fff;
+    }
+    .btn-primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+    .btn-primary:disabled { opacity: 0.45; cursor: not-allowed; }
+
+    #gate .btn { width: 100%; padding: 0.65rem; font-size: 0.82rem; }
+
+    /* ── Admin shell ───────────────────────────────── */
+    #admin { display: none; min-height: 100vh; }
+
+    .admin-header {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 1.75rem;
+      height: 52px;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .admin-wordmark {
+      font-family: Georgia, serif;
+      font-size: 0.9rem;
+      font-weight: 300;
+    }
+    .admin-wordmark em {
+      font-style: normal;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-left: 0.5rem;
+    }
+
+    .admin-main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2.5rem 1.75rem 7rem;
+    }
+
+    /* ── Cards ─────────────────────────────────────── */
+    .card {
+      margin-bottom: 1.5rem;
+      padding: 1.5rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    .card-title {
+      font-family: Georgia, serif;
+      font-size: 0.95rem;
+      font-weight: 300;
+      margin-bottom: 0.25rem;
+    }
+    .card-sub {
+      font-size: 0.67rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 1.1rem 0;
+    }
+
+    /* ── Fields ────────────────────────────────────── */
+    .field { margin-bottom: 0.85rem; }
+    .field:last-child { margin-bottom: 0; }
+
+    label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-size: 0.67rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .field-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+    @media (max-width: 560px) { .field-row { grid-template-columns: 1fr; } }
+
+    /* ── Project rows ──────────────────────────────── */
+    .project-row { margin-bottom: 1.35rem; padding-bottom: 1.35rem; border-bottom: 1px solid var(--border); }
+    .project-row:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+    .project-num { font-size: 0.67rem; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 0.6rem; }
+
+    /* ── Save bar ──────────────────────────────────── */
+    .save-bar {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      display: flex; align-items: center; justify-content: flex-end;
+      gap: 1rem;
+      padding: 0.85rem 1.75rem;
+      background: var(--bg);
+      border-top: 1px solid var(--border);
+    }
+    #status { font-size: 0.75rem; color: var(--muted); }
+    #status.ok  { color: var(--accent); }
+    #status.err { color: var(--err); }
+
+    #gate-err { font-size: 0.75rem; color: var(--err); min-height: 1rem; text-align: center; }
+  </style>
+</head>
+<body>
+
+<!-- ── Password gate ── -->
+<div id="gate">
+  <form id="gate-form" class="gate-inner" autocomplete="off">
+    <p class="gate-wordmark">Daniel Mora</p>
+    <p class="gate-sub">Admin access</p>
+    <input type="password" id="pw" placeholder="Password" autocomplete="current-password" required>
+    <button type="submit" class="btn">Enter →</button>
+    <p id="gate-err"></p>
+  </form>
+</div>
+
+<!-- ── Admin panel ── -->
+<div id="admin">
+  <header class="admin-header">
+    <div class="admin-wordmark">Daniel Mora <em>Admin</em></div>
+    <button class="btn" id="sign-out">Sign out</button>
+  </header>
+
+  <main class="admin-main">
+
+    <!-- Dirk case study -->
+    <div class="card">
+      <p class="card-title">Dirk Nowitzki Case Study</p>
+      <p class="card-sub">dirk.html</p>
+      <div class="field">
+        <label>Dateline</label>
+        <input type="text" id="dirk-dateline">
+      </div>
+      <div class="field">
+        <label>Headline</label>
+        <input type="text" id="dirk-title">
+      </div>
+      <div class="field">
+        <label>Subtitle / Dek</label>
+        <textarea id="dirk-subtitle" rows="3"></textarea>
+      </div>
+      <div class="divider"></div>
+      <div class="field">
+        <label>Story heading</label>
+        <input type="text" id="dirk-story-title">
+      </div>
+      <div class="field">
+        <label>Body — paragraph 1</label>
+        <textarea id="dirk-p1" rows="4"></textarea>
+      </div>
+      <div class="field">
+        <label>Body — paragraph 2</label>
+        <textarea id="dirk-p2" rows="4"></textarea>
+      </div>
+    </div>
+
+    <!-- Work page -->
+    <div class="card">
+      <p class="card-title">Work Page</p>
+      <p class="card-sub">work.html</p>
+      <div class="field-row" style="margin-bottom:0.85rem">
+        <div class="field" style="margin:0">
+          <label>Page headline</label>
+          <input type="text" id="work-hero-title">
+        </div>
+        <div class="field" style="margin:0">
+          <label>Intro line</label>
+          <input type="text" id="work-hero-intro">
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div id="work-projects"></div>
+    </div>
+
+  </main>
+
+  <div class="save-bar">
+    <span id="status"></span>
+    <button class="btn btn-primary" id="save-btn">Save &amp; Deploy</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  const PROJECTS = [
+    { key: 'dirk',     num: '01', name: 'Dirk Nowitzki Partnership' },
+    { key: 'creator',  num: '02', name: 'Creator Program' },
+    { key: 'patriots', num: '03', name: 'New England Patriots' },
+    { key: 'disney',   num: '04', name: "Disney's Wish" },
+    { key: 'film',     num: '05', name: 'Film Background' },
+  ];
+
+  let password = '';
+  let content  = {};
+
+  // ── Gate ──────────────────────────────────────────
+  document.getElementById('gate-form').addEventListener('submit', async e => {
+    e.preventDefault();
+    password = document.getElementById('pw').value.trim();
+    if (!password) return;
+    await loadContent();
+    document.getElementById('gate').style.display = 'none';
+    document.getElementById('admin').style.display = 'block';
+  });
+
+  document.getElementById('sign-out').addEventListener('click', () => {
+    password = '';
+    document.getElementById('pw').value = '';
+    document.getElementById('gate').style.display = 'flex';
+    document.getElementById('admin').style.display = 'none';
+  });
+
+  // ── Load content.json ──────────────────────────────
+  async function loadContent() {
+    try {
+      const r = await fetch('/content.json?t=' + Date.now());
+      content = await r.json();
+    } catch { content = {}; }
+    populate();
+  }
+
+  // ── Populate fields ────────────────────────────────
+  function populate() {
+    const d = content.dirk || {};
+    set('dirk-dateline',    d.dateline    || '');
+    set('dirk-title',       d.title       || '');
+    set('dirk-subtitle',    d.subtitle    || '');
+    set('dirk-story-title', d.story_title || '');
+    set('dirk-p1',          d.story_p1   || '');
+    set('dirk-p2',          d.story_p2   || '');
+
+    const w = content.work || {};
+    set('work-hero-title', w.hero_title || '');
+    set('work-hero-intro', w.hero_intro || '');
+
+    // Build project rows
+    const container = document.getElementById('work-projects');
+    container.innerHTML = '';
+    PROJECTS.forEach(({ key, num, name }) => {
+      const row = document.createElement('div');
+      row.className = 'project-row';
+      row.innerHTML = `
+        <p class="project-num">${num} — ${name}</p>
+        <div class="field-row" style="margin-bottom:0.6rem">
+          <div class="field" style="margin:0">
+            <label>Label</label>
+            <input type="text" id="work-${key}-label">
+          </div>
+          <div class="field" style="margin:0">
+            <label>Title</label>
+            <input type="text" id="work-${key}-title">
+          </div>
+        </div>
+        <div class="field" style="margin:0">
+          <label>Description</label>
+          <textarea id="work-${key}-desc" rows="2"></textarea>
+        </div>
+      `;
+      container.appendChild(row);
+      set(`work-${key}-label`, w[key + '_label'] || '');
+      set(`work-${key}-title`, w[key + '_title'] || '');
+      set(`work-${key}-desc`,  w[key + '_desc']  || '');
+    });
+  }
+
+  function set(id, val) {
+    const el = document.getElementById(id);
+    if (el) el.value = val;
+  }
+
+  function get(id) {
+    const el = document.getElementById(id);
+    return el ? el.value.trim() : '';
+  }
+
+  // ── Collect current form values ────────────────────
+  function collect() {
+    const w = { ...(content.work || {}) };
+    PROJECTS.forEach(({ key }) => {
+      w[key + '_label'] = get(`work-${key}-label`);
+      w[key + '_title'] = get(`work-${key}-title`);
+      w[key + '_desc']  = get(`work-${key}-desc`);
+    });
+    return {
+      ...content,
+      dirk: {
+        dateline:    get('dirk-dateline'),
+        title:       get('dirk-title'),
+        subtitle:    get('dirk-subtitle'),
+        story_title: get('dirk-story-title'),
+        story_p1:    get('dirk-p1'),
+        story_p2:    get('dirk-p2'),
+      },
+      work: {
+        hero_title: get('work-hero-title'),
+        hero_intro: get('work-hero-intro'),
+        ...w,
+      },
+    };
+  }
+
+  // ── Save ───────────────────────────────────────────
+  const saveBtn  = document.getElementById('save-btn');
+  const statusEl = document.getElementById('status');
+
+  saveBtn.addEventListener('click', async () => {
+    saveBtn.disabled = true;
+    saveBtn.textContent = 'Saving…';
+    statusEl.className = '';
+    statusEl.textContent = '';
+
+    try {
+      const res = await fetch('/api/save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password, content: collect() }),
+      });
+      const json = await res.json();
+
+      if (res.ok) {
+        content = collect();
+        statusEl.className = 'ok';
+        statusEl.textContent = '✓ Saved — deploying now (~30s)';
+      } else if (res.status === 401) {
+        statusEl.className = 'err';
+        statusEl.textContent = 'Incorrect password';
+      } else {
+        throw new Error(json.error || 'Unknown error');
+      }
+    } catch (err) {
+      statusEl.className = 'err';
+      statusEl.textContent = 'Error: ' + err.message;
+    } finally {
+      saveBtn.disabled = false;
+      saveBtn.textContent = 'Save & Deploy';
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
