@@ -668,24 +668,24 @@ span.work-index-action {
   white-space: nowrap;
 }
 
-/* centered play button */
+/* centered play button — pill */
 .vp-center-play {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 3.25rem;
-  height: 3.25rem;
-  border-radius: 50%;
+  gap: 0.55rem;
+  padding: 0.65rem 1.25rem 0.65rem 1rem;
+  border-radius: 100px;
   border: 1.5px solid rgba(255, 255, 255, 0.5);
   background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: #fff;
   cursor: pointer;
   pointer-events: auto;
+  white-space: nowrap;
   transition: background 0.2s, border-color 0.2s, opacity 0.3s, transform 0.25s;
 }
 .vp-center-play:hover {
@@ -693,13 +693,19 @@ span.work-index-action {
   border-color: rgba(255, 255, 255, 0.8);
 }
 .vp-center-play svg {
-  width: 1.2rem; height: 1.2rem;
-  margin-left: 3px; /* optical centering */
+  flex-shrink: 0;
+  width: 1rem; height: 1rem;
+}
+.vp-center-play span {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
 }
 .video-player.vp-playing .vp-center-play {
   opacity: 0;
   pointer-events: none;
-  transform: translate(-50%, -50%) scale(0.8);
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 .dirk-body {
