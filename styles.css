@@ -733,6 +733,11 @@ span.work-index-action {
   transform: translate(-50%, -50%) scale(0.9);
 }
 
+.video-player.vp-native-controls .vp-overlay,
+.video-player.vp-native-controls .vp-center-play {
+  display: none;
+}
+
 .dirk-body {
   padding-block-start: 3rem;
 }
