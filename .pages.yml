@@ -28,9 +28,6 @@ content:
       - name: profile_bio
         label: Short biography
         type: text
-      - name: partners
-        label: Partner names
-        type: string
       - name: creator_kicker
         label: Creator program date line
         type: string
