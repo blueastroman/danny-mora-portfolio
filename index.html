@@ -12,78 +12,111 @@
     <script src="script.js" defer></script>
   </head>
   <body class="site-shell home-page">
-    <header class="site-header">
-      <div class="wrapper header-inner">
-        <a class="brand-lockup" href="index.html" aria-label="Daniel Mora home">
-          <span class="brand-name">Daniel Mora</span>
-        </a>
-        <nav class="site-nav" id="site-nav" aria-label="Primary">
-          <a href="index.html" aria-current="page">Home</a>
-          <a href="work.html">Work</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main class="page-main" id="main">
+    <main class="page-main newspaper-home" id="main">
       <div class="wrapper">
-        <section class="hero home-hero section-tight">
-          <div class="hero-copy">
-            <h1 class="hero-title">
-              <span>Stories built</span>
-              <span class="hero-title-accent">to perform.</span>
-            </h1>
-            <p class="hero-role">Marketing Manager, Lufthansa Group</p>
-            <a class="hero-text-link" href="work.html">View work ↗</a>
+        <header class="paper-header">
+          <div class="paper-nameplate">
+            <span data-cms="location">New York City</span>
+            <a href="index.html" aria-label="Home">Daniel Mora</a>
+            <span data-cms="masthead_tagline">Marketing and Film</span>
+          </div>
+          <nav class="paper-nav" aria-label="Primary">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </header>
+
+        <section class="press-front-page" aria-label="Front page">
+          <article class="press-ad press-ad-lead" aria-labelledby="lead-headline">
+            <figure class="press-ad-image press-ad-image-lead">
+              <img src="assets/dirk/dirk-bed.jpg" alt="Dirk Nowitzki stretched out across the Lufthansa Allegris extra-long bed, with his face on the right side of the frame">
+            </figure>
+            <div class="press-ad-copy">
+              <h1 class="press-headline" id="lead-headline">
+                <span data-cms="lead_headline_1">He’s 7 feet tall.</span>
+                <span class="press-headline-second" data-cms="lead_headline_2">The bed is 7 feet 2.</span>
+              </h1>
+              <p class="press-deck" data-cms="lead_deck">A 2024 cold call from Dirk’s team started an ongoing Lufthansa Allegris partnership.</p>
+              <a class="press-link" href="dirk.html">See the campaign <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="press-ad-footer"><span>01 / 04</span></div>
+          </article>
+
+          <aside class="press-profile" aria-labelledby="profile-headline">
+            <figure class="press-profile-photo">
+              <img src="Daniel_Mora_2024-06-14_REVISED.jpg" alt="Portrait of Daniel Mora" loading="lazy">
+            </figure>
+            <h2 id="profile-headline" data-cms="profile_title">Brand Partnerships and Influencer Marketing Manager</h2>
+            <p class="press-profile-role" data-cms="profile_company">Lufthansa Group</p>
+            <p data-cms="profile_bio">I studied film at Emory. I still write and direct short films, and I’ve supervised visual effects on films recognized at SXSW and NFFTY.</p>
+            <a class="press-link" href="about.html">Full biography <span aria-hidden="true">↗</span></a>
+          </aside>
+        </section>
+
+        <section class="partner-strip press-partners" aria-label="Other partners">
+          <div class="partner-strip-inner">
+            <span class="partner-strip-label">Also worked with</span>
+            <span class="partner-strip-names">
+              <span data-cms="partners">SWISS · Austrian Airlines · Disney · American Express · Chase</span>
+            </span>
           </div>
         </section>
-      </div>
 
-      <section class="partner-strip" aria-label="Selected partners">
-        <div class="wrapper partner-strip-inner">
-          <span class="partner-strip-label">Partners &amp; Collaborations</span>
-          <span class="partner-strip-names">
-            Lufthansa · SWISS · Austrian Airlines · Disney · New England Patriots · Dirk Nowitzki ·
-            American Express · Chase
-          </span>
-        </div>
-      </section>
-
-      <div class="wrapper">
-        <section class="section" aria-label="Featured work">
-          <div class="home-work-showcase" aria-label="Featured work">
-            <a class="home-work-tile home-work-tile-dirk" href="dirk.html">
-              <img src="assets/dirk/dirk-bed.jpg" alt="Dirk Nowitzki lying in Lufthansa Allegris" loading="lazy">
-              <span class="home-work-tile-copy">
-                <span class="home-work-headline">Dirk Nowitzki Partnership</span>
-                <span class="home-work-subhead">A seat fit for an MVP</span>
-              </span>
-            </a>
-            <a class="home-work-tile" href="work.html#creator-program">
-              <img
-                src="assets/home/creator-wing.jpg"
-                alt="Airplane wing over clouds"
-                loading="lazy"
-              >
-              <span class="home-work-tile-copy">
-                <span class="home-work-headline">Influencer Marketing</span>
-                <span class="home-work-subhead">Making trips come to life with top creators</span>
-              </span>
-            </a>
-            <a class="home-work-tile home-work-tile-dark" href="work.html#patriots">
-              <span class="home-work-tile-copy">
-                <span class="home-work-headline">Sports &amp; Entertainment Partnerships</span>
-                <span class="home-work-subhead">Partnerships built around teams, studios, audiences, and cultural moments.</span>
-              </span>
-            </a>
-            <a class="home-work-tile home-work-tile-paper" href="film.html">
-              <span class="home-work-tile-copy">
-                <span class="home-work-headline">Film Production</span>
-                <span class="home-work-subhead">Before the briefs, there were scripts.</span>
-              </span>
-            </a>
+        <section class="press-ad press-ad-creator" aria-labelledby="creator-headline">
+          <div class="press-stat" aria-label="Consistent 10 times return on investment">
+            <p class="press-kicker" data-cms="creator_kicker">Since 2022</p>
+            <h2 class="press-number" id="creator-headline"><span data-cms="creator_metric">10×</span><span>+</span></h2>
+            <p class="press-deck" data-cms="creator_metric_label">Return on investment.</p>
           </div>
+          <div class="press-ad-copy press-ad-copy-creator">
+            <h3 class="press-headline press-headline-creator" data-cms="creator_headline">Creators, everywhere.</h3>
+            <p class="press-deck" data-cms="creator_deck">Lufthansa campaigns across travel and entertainment.</p>
+            <a class="press-link" href="work.html#creator-program">Campaign details <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="press-ad-footer"><span>02 / 04</span></div>
+        </section>
+
+        <section class="press-ad press-ad-patriots" aria-labelledby="patriots-headline">
+          <div class="press-ad-copy">
+            <p class="press-kicker" data-cms="patriots_kicker">New England Patriots × Lufthansa</p>
+            <h2 class="press-headline press-headline-patriots" id="patriots-headline">
+              <span data-cms="patriots_headline_1">New England,</span><span class="press-headline-second" data-cms="patriots_headline_2">meet Germany.</span>
+            </h2>
+            <p class="press-deck" data-cms="patriots_deck">The 3-year partnership has brought Patriots events to Berlin, Frankfurt, and Munich.</p>
+            <a class="press-link" href="patriots.html">See the campaign <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="press-ad-stamp" aria-hidden="true">
+            <svg viewBox="0 0 300 300" focusable="false">
+              <path d="M76 150 C128 150 151 74 222 74 M76 150 H232 M76 150 C128 150 151 226 222 226" />
+              <circle class="press-route-origin" cx="70" cy="150" r="34" />
+              <circle cx="226" cy="74" r="12" />
+              <circle cx="238" cy="150" r="12" />
+              <circle cx="226" cy="226" r="12" />
+              <text x="70" y="157" text-anchor="middle">BOS</text>
+            </svg>
+          </div>
+          <div class="press-ad-footer"><span>03 / 04</span></div>
+        </section>
+
+        <section class="press-ad press-ad-film" aria-labelledby="film-headline">
+          <figure class="press-ad-image press-ad-image-film">
+            <img src="assets/film/happiness-machine.png" alt="Illustrated title card for The Happiness Machine" loading="lazy">
+          </figure>
+          <div class="press-ad-copy press-ad-copy-film">
+            <p class="press-kicker" data-cms="film_kicker">Personal work</p>
+            <h2 class="press-headline press-headline-film" id="film-headline">
+              <span data-cms="film_headline_1">Before the briefs,</span><span class="press-headline-second" data-cms="film_headline_2">there were scripts.</span>
+            </h2>
+            <a class="press-link" href="film.html">Open the film archive <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="press-ad-footer"><span>Short films · Documentaries · Visual effects</span><span>04 / 04</span></div>
+        </section>
+
+        <section class="press-endnote" aria-label="More work">
+          <p data-cms="endnote">Full case studies and credits.</p>
+          <a class="press-link" href="work.html">Work index <span aria-hidden="true">↗</span></a>
         </section>
       </div>
     </main>

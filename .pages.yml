@@ -1,0 +1,72 @@
+content:
+  - name: homepage
+    label: Homepage copy
+    type: file
+    path: content/homepage.json
+    fields:
+      - name: location
+        label: Location in masthead
+        type: string
+      - name: masthead_tagline
+        label: Masthead tagline
+        type: string
+      - name: lead_headline_1
+        label: Main headline, line 1
+        type: string
+      - name: lead_headline_2
+        label: Main headline, line 2
+        type: string
+      - name: lead_deck
+        label: Main story sentence
+        type: text
+      - name: profile_title
+        label: Your title
+        type: string
+      - name: profile_company
+        label: Company
+        type: string
+      - name: profile_bio
+        label: Short biography
+        type: text
+      - name: partners
+        label: Partner names
+        type: string
+      - name: creator_kicker
+        label: Creator program date line
+        type: string
+      - name: creator_metric
+        label: Creator program metric
+        type: string
+      - name: creator_metric_label
+        label: Metric caption
+        type: string
+      - name: creator_headline
+        label: Creator program headline
+        type: string
+      - name: creator_deck
+        label: Creator program sentence
+        type: text
+      - name: patriots_kicker
+        label: Patriots label
+        type: string
+      - name: patriots_headline_1
+        label: Patriots headline, line 1
+        type: string
+      - name: patriots_headline_2
+        label: Patriots headline, line 2
+        type: string
+      - name: patriots_deck
+        label: Patriots story sentence
+        type: text
+      - name: film_kicker
+        label: Film section label
+        type: string
+      - name: film_headline_1
+        label: Film headline, line 1
+        type: string
+      - name: film_headline_2
+        label: Film headline, line 2
+        type: string
+      - name: endnote
+        label: Bottom note
+        type: string
