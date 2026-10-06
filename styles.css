@@ -586,6 +586,10 @@ select {
   padding-bottom: 0.25rem;
 }
 
+.press-front-page .press-ad-lead .press-deck {
+  max-width: 38rem;
+}
+
 .press-profile {
   align-self: stretch;
   padding: 1.6rem 0 2rem clamp(1.2rem, 2vw, 2rem);
