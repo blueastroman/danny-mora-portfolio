@@ -974,6 +974,20 @@ span.work-index-action {
 
 .patriots-case-study {
   border-top: 1px solid rgba(41, 77, 104, 0.22);
+  padding-block: clamp(3.5rem, 6vw, 5.5rem) clamp(4.5rem, 8vw, 7rem);
+}
+
+.patriots-page .dirk-hero {
+  padding-block: clamp(3.5rem, 6vw, 5rem) clamp(2.75rem, 5vw, 4.5rem);
+}
+
+.patriots-page .dirk-title {
+  font-size: clamp(3.9rem, 6.4vw, 6.5rem);
+}
+
+.patriots-page .dirk-subtitle {
+  max-width: 44rem;
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
 }
 
 .patriots-case-intro {
@@ -991,7 +1005,7 @@ span.work-index-action {
 
 .patriots-case-heading .section-title {
   max-width: 11ch;
-  font-size: clamp(3.6rem, 7vw, 7rem);
+  font-size: clamp(3rem, 5.2vw, 5.4rem);
 }
 
 .patriots-case-copy {
@@ -1012,7 +1026,7 @@ span.work-index-action {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1px;
-  margin-top: clamp(5rem, 10vw, 10rem);
+  margin-top: clamp(3.5rem, 6vw, 6rem);
   border-block: 1px solid rgba(41, 77, 104, 0.22);
   background: rgba(41, 77, 104, 0.22);
 }
@@ -1044,7 +1058,7 @@ span.work-index-action {
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
   gap: clamp(2rem, 8vw, 8rem);
   align-items: end;
-  margin-top: clamp(5rem, 10vw, 10rem);
+  margin-top: clamp(3.5rem, 6vw, 6rem);
   padding: clamp(2rem, 5vw, 4.5rem) 0 0;
   border-top: 4px double var(--ink);
 }
@@ -1053,7 +1067,7 @@ span.work-index-action {
   max-width: 9ch;
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(3.4rem, 7vw, 7rem);
+  font-size: clamp(3rem, 5.2vw, 5.4rem);
   font-weight: 300;
   letter-spacing: -0.06em;
   line-height: 0.88;
@@ -1830,7 +1844,7 @@ span.work-index-action {
 
   .patriots-case-grid {
     grid-template-columns: 1fr;
-    margin-top: 5rem;
+    margin-top: 3.5rem;
   }
 
   .patriots-case-grid article {
@@ -1838,7 +1852,7 @@ span.work-index-action {
   }
 
   .patriots-case-finale {
-    margin-top: 5rem;
+    margin-top: 3.5rem;
   }
 
   .film-award-card h3 {
