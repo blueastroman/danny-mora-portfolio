@@ -985,6 +985,8 @@ span.work-index-action {
   max-width: 12ch;
   margin-inline: auto;
   font-size: clamp(3.9rem, 6.4vw, 6.5rem);
+  white-space: normal;
+  text-wrap: balance;
 }
 
 .patriots-page .dirk-subtitle {
