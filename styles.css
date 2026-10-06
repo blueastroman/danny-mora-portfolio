@@ -977,13 +977,26 @@ span.work-index-action {
   padding-block: clamp(3.5rem, 6vw, 5.5rem) clamp(4.5rem, 8vw, 7rem);
 }
 
+.patriots-opening {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: stretch;
+  padding-block: clamp(3rem, 6vw, 5rem) clamp(3rem, 5vw, 4.5rem);
+  border-bottom: 1px solid rgba(41, 77, 104, 0.22);
+}
+
 .patriots-page .dirk-hero {
-  padding-block: clamp(3.5rem, 6vw, 5rem) clamp(2.75rem, 5vw, 4.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: 0;
+  text-align: left;
 }
 
 .patriots-page .dirk-title {
   max-width: 12ch;
-  margin-inline: auto;
+  margin-inline: 0;
   font-size: clamp(3.9rem, 6.4vw, 6.5rem);
   white-space: normal;
   text-wrap: balance;
@@ -996,17 +1009,19 @@ span.work-index-action {
 
 .patriots-hero-image {
   position: relative;
-  width: min(100%, 76rem);
-  margin: 0 auto clamp(3.5rem, 6vw, 5.5rem);
+  width: 100%;
+  min-height: 31rem;
+  margin: 0;
   overflow: hidden;
-  border-block: 1px solid rgba(41, 77, 104, 0.22);
+  border: 1px solid rgba(41, 77, 104, 0.22);
   background: #f0f0f0;
 }
 
 .patriots-hero-image img {
   display: block;
   width: 100%;
-  max-height: min(52vw, 34rem);
+  height: 100%;
+  min-height: 31rem;
   object-fit: contain;
   object-position: center;
 }
@@ -1875,6 +1890,20 @@ span.work-index-action {
     gap: 2rem;
   }
 
+  .patriots-opening {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-block: 3rem 3.5rem;
+  }
+
+  .patriots-page .dirk-hero {
+    text-align: center;
+  }
+
+  .patriots-page .dirk-title {
+    margin-inline: auto;
+  }
+
   .patriots-case-finale {
     grid-template-areas:
       "kicker"
@@ -1906,11 +1935,12 @@ span.work-index-action {
   }
 
   .patriots-hero-image {
-    margin-bottom: 3.5rem;
+    min-height: 0;
   }
 
   .patriots-hero-image img {
-    max-height: 65vw;
+    min-height: 0;
+    aspect-ratio: 1 / 1;
   }
 
   .film-award-card h3 {
