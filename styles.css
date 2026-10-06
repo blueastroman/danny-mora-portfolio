@@ -982,6 +982,8 @@ span.work-index-action {
 }
 
 .patriots-page .dirk-title {
+  max-width: 12ch;
+  margin-inline: auto;
   font-size: clamp(3.9rem, 6.4vw, 6.5rem);
 }
 
