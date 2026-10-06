@@ -1412,6 +1412,39 @@ span.work-index-action {
   align-items: start;
 }
 
+.disney-body {
+  border-top: 1px solid rgba(41, 77, 104, 0.22);
+}
+
+.disney-storyband {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: clamp(2rem, 7vw, 7rem);
+  align-items: start;
+}
+
+.disney-story-copy,
+.disney-activation {
+  max-width: var(--narrow-max);
+}
+
+.disney-story-copy .section-title,
+.disney-activation .section-title {
+  font-size: clamp(2.6rem, 5vw, 5rem);
+}
+
+.disney-story-copy > p:not(.press-kicker),
+.disney-activation > p:not(.press-kicker) {
+  margin: 1rem 0 0;
+  color: rgba(22, 20, 18, 0.86);
+  font-size: 1.08rem;
+  line-height: 1.55;
+}
+
+.disney-activation {
+  padding-top: clamp(3rem, 8vw, 7rem);
+}
+
 .dirk-story-copy > p {
   max-width: var(--narrow-max);
   margin: 1rem 0 0;
@@ -1640,6 +1673,7 @@ span.work-index-action {
 
   .about-body,
   .dirk-storyband,
+  .disney-storyband,
   .film-award,
   .work-index-row {
     grid-template-columns: 1fr;
@@ -1647,6 +1681,10 @@ span.work-index-action {
 
   .work-index-action {
     justify-self: start;
+    padding-top: 0;
+  }
+
+  .disney-activation {
     padding-top: 0;
   }
 
