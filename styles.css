@@ -972,6 +972,99 @@ span.work-index-action {
   line-height: 1.28;
 }
 
+.patriots-case-study {
+  border-top: 1px solid rgba(41, 77, 104, 0.22);
+}
+
+.patriots-case-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+  gap: clamp(2rem, 8vw, 8rem);
+  align-items: start;
+}
+
+.patriots-case-heading .press-kicker,
+.patriots-case-grid .press-kicker,
+.patriots-case-finale .press-kicker {
+  margin-bottom: 0.9rem;
+}
+
+.patriots-case-heading .section-title {
+  max-width: 11ch;
+  font-size: clamp(3.6rem, 7vw, 7rem);
+}
+
+.patriots-case-copy {
+  display: grid;
+  gap: 1.2rem;
+  padding-top: 0.5rem;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+.patriots-case-copy p,
+.patriots-case-grid p,
+.patriots-case-finale p {
+  margin: 0;
+}
+
+.patriots-case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: clamp(5rem, 10vw, 10rem);
+  border-block: 1px solid rgba(41, 77, 104, 0.22);
+  background: rgba(41, 77, 104, 0.22);
+}
+
+.patriots-case-grid article {
+  min-height: 20rem;
+  padding: clamp(1.35rem, 3vw, 2.5rem);
+  background: var(--paper);
+}
+
+.patriots-case-grid h3 {
+  max-width: 10ch;
+  margin: 0 0 1.2rem;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.4vw, 3.5rem);
+  font-weight: 300;
+  letter-spacing: -0.045em;
+  line-height: 0.95;
+}
+
+.patriots-case-grid p:last-child {
+  max-width: 28rem;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.patriots-case-finale {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+  gap: clamp(2rem, 8vw, 8rem);
+  align-items: end;
+  margin-top: clamp(5rem, 10vw, 10rem);
+  padding: clamp(2rem, 5vw, 4.5rem) 0 0;
+  border-top: 4px double var(--ink);
+}
+
+.patriots-case-finale h2 {
+  max-width: 9ch;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(3.4rem, 7vw, 7rem);
+  font-weight: 300;
+  letter-spacing: -0.06em;
+  line-height: 0.88;
+}
+
+.patriots-case-finale > p:last-child {
+  max-width: 31rem;
+  font-size: 1.12rem;
+  line-height: 1.5;
+}
+
 .dirk-video-block {
   width: min(100%, var(--media-max));
   margin: 1.25rem auto 0;
@@ -1717,6 +1810,35 @@ span.work-index-action {
 
   .dirk-subtitle {
     font-size: 1.05rem;
+  }
+
+  .patriots-case-intro,
+  .patriots-case-finale {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .patriots-case-heading .section-title,
+  .patriots-case-finale h2 {
+    max-width: 12ch;
+  }
+
+  .patriots-case-copy {
+    padding-top: 0;
+    font-size: 1.05rem;
+  }
+
+  .patriots-case-grid {
+    grid-template-columns: 1fr;
+    margin-top: 5rem;
+  }
+
+  .patriots-case-grid article {
+    min-height: 0;
+  }
+
+  .patriots-case-finale {
+    margin-top: 5rem;
   }
 
   .film-award-card h3 {
