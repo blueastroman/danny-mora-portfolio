@@ -469,9 +469,9 @@ select {
 
 .press-front-page .press-ad-lead {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr);
-  gap: clamp(1.5rem, 4vw, 4rem);
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+  align-items: start;
   padding-block: 2rem 3.5rem;
   border-bottom: 0;
 }
