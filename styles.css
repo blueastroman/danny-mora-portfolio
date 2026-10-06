@@ -1089,15 +1089,19 @@ span.work-index-action {
 
 .patriots-case-finale {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
-  gap: clamp(2rem, 8vw, 8rem);
-  align-items: end;
+  grid-template-columns: minmax(110px, 0.35fr) minmax(0, 1fr);
+  grid-template-areas:
+    "kicker title"
+    ". copy";
+  gap: 1.5rem clamp(2rem, 7vw, 7rem);
+  align-items: start;
   margin-top: clamp(3.5rem, 6vw, 6rem);
   padding: clamp(2rem, 5vw, 4.5rem) 0 0;
   border-top: 4px double var(--ink);
 }
 
 .patriots-case-finale h2 {
+  grid-area: title;
   max-width: 9ch;
   margin: 0;
   font-family: var(--font-display);
@@ -1108,9 +1112,14 @@ span.work-index-action {
 }
 
 .patriots-case-finale > p:last-child {
+  grid-area: copy;
   max-width: 31rem;
   font-size: 1.12rem;
   line-height: 1.5;
+}
+
+.patriots-case-finale .press-kicker {
+  grid-area: kicker;
 }
 
 .dirk-video-block {
@@ -1864,6 +1873,13 @@ span.work-index-action {
   .patriots-case-finale {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .patriots-case-finale {
+    grid-template-areas:
+      "kicker"
+      "title"
+      "copy";
   }
 
   .patriots-case-heading .section-title,
