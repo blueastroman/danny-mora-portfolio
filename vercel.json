@@ -8,7 +8,6 @@
     { "source": "/client-work", "destination": "/client-work.html", "permanent": true },
     { "source": "/films-2", "destination": "/film.html#short-films", "permanent": true },
     { "source": "/documentaries", "destination": "/film.html#documentaries", "permanent": true },
-    { "source": "/credits-and-awards", "destination": "/film.html#credits-and-awards", "permanent": true },
-    { "source": "/about", "destination": "/about.html", "permanent": true }
+    { "source": "/credits-and-awards", "destination": "/film.html#credits-and-awards", "permanent": true }
   ]
 }
