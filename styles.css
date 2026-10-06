@@ -1012,9 +1012,8 @@ span.work-index-action {
   width: 100%;
   min-height: 31rem;
   margin: 0;
-  overflow: hidden;
-  border: 1px solid rgba(41, 77, 104, 0.22);
-  background: #f0f0f0;
+  overflow: visible;
+  background: transparent;
 }
 
 .patriots-hero-image img {
@@ -1024,15 +1023,13 @@ span.work-index-action {
   min-height: 31rem;
   object-fit: contain;
   object-position: center;
+  mix-blend-mode: multiply;
 }
 
 .patriots-hero-image figcaption {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 0.75rem 1rem;
-  background: rgba(247, 247, 247, 0.9);
+  position: static;
+  padding: 0.7rem 0 0;
+  background: transparent;
   color: var(--muted);
   font-size: 0.68rem;
   letter-spacing: 0.1em;
