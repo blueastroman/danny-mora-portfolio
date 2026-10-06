@@ -382,6 +382,12 @@ select {
   background-size: 180px 180px;
 }
 
+.home-page .press-ad-creator,
+.home-page .press-ad-patriots,
+.home-page .press-ad-film {
+  display: none;
+}
+
 .newspaper-home {
   --press-accent: var(--accent);
 }
