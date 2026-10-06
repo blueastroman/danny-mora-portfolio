@@ -829,7 +829,8 @@ select {
 }
 
 .work-hero {
-  min-height: 24rem;
+  min-height: 0;
+  padding-block: clamp(3.5rem, 6vw, 5.5rem) clamp(2.75rem, 4vw, 4rem);
 }
 
 .work-index {
@@ -844,7 +845,7 @@ select {
   grid-template-columns: 4rem minmax(0, 1fr) max-content;
   gap: 2rem;
   align-items: start;
-  padding-block: 2.4rem;
+  padding-block: clamp(1.8rem, 2.8vw, 2.35rem);
   border-top: 1px solid rgba(41, 77, 104, 0.22);
 }
 
