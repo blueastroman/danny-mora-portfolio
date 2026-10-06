@@ -982,15 +982,15 @@ span.work-index-action {
   grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
   gap: clamp(2rem, 6vw, 6rem);
   align-items: stretch;
-  padding-block: clamp(3rem, 6vw, 5rem) clamp(3rem, 5vw, 4.5rem);
+  padding-block: clamp(1.5rem, 3vw, 2.5rem) clamp(3rem, 5vw, 4.5rem);
   border-bottom: 1px solid rgba(41, 77, 104, 0.22);
 }
 
 .patriots-page .dirk-hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-block: 0;
+  justify-content: flex-start;
+  padding-top: clamp(3rem, 7vw, 6rem);
   text-align: left;
 }
 
@@ -1016,6 +1016,19 @@ span.work-index-action {
   background: transparent;
 }
 
+.patriots-hero-image::after {
+  position: absolute;
+  right: 10%;
+  bottom: 8%;
+  left: 12%;
+  height: 7%;
+  border-radius: 50%;
+  background: rgba(21, 25, 31, 0.22);
+  content: "";
+  filter: blur(18px);
+  transform: rotate(-2deg);
+}
+
 .patriots-hero-image img {
   display: block;
   width: 100%;
@@ -1024,6 +1037,8 @@ span.work-index-action {
   object-fit: contain;
   object-position: center;
   mix-blend-mode: multiply;
+  position: relative;
+  z-index: 1;
 }
 
 .patriots-hero-image figcaption {
@@ -1890,10 +1905,11 @@ span.work-index-action {
   .patriots-opening {
     grid-template-columns: 1fr;
     gap: 2.5rem;
-    padding-block: 3rem 3.5rem;
+    padding-block: 1rem 3.5rem;
   }
 
   .patriots-page .dirk-hero {
+    padding-top: 2rem;
     text-align: center;
   }
 
