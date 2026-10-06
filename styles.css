@@ -607,7 +607,6 @@ select {
   max-height: 300px;
   object-fit: cover;
   object-position: center 35%;
-  filter: grayscale(100%);
 }
 
 .press-profile h2 {
