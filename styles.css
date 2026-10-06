@@ -1438,6 +1438,11 @@ span.work-index-action {
 
 .disney-body {
   border-top: 1px solid rgba(41, 77, 104, 0.22);
+  padding-block: clamp(3.5rem, 6vw, 5rem) clamp(4rem, 7vw, 6rem);
+}
+
+.disney-page .section-tight {
+  padding-block: clamp(3rem, 5vw, 5rem) clamp(3rem, 5vw, 4rem);
 }
 
 .disney-storyband {
@@ -1466,7 +1471,7 @@ span.work-index-action {
 }
 
 .disney-activation {
-  padding-top: clamp(3rem, 8vw, 7rem);
+  padding-top: 0;
 }
 
 .dirk-story-copy > p {
